@@ -11,9 +11,10 @@ export const scss = () => {
     message: 'Error: <%= error.message %>'
   })))
   .pipe(sass({
-    outputStyle: 'expanded'
+    outputStyle: 'expanded',
+    includePaths: ['node_modules']
   }))
-  .pipe(app.plugins.replace(/@img\//g, '../img/'))
+  .pipe(app.plugins.replace(/@img\//g, ''))
   .pipe(autoprefixer({
     grid: true,
     overrideBrowserlist: ['last 5 versions'],

@@ -4,6 +4,6 @@ export const server = () => {
       baseDir: `${app.path.build.html}`
     },
     notify: false,
-    port: 3000
+    port: 3030
   })
 }
