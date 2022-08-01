@@ -24,11 +24,11 @@ export const path = {
     // files: `${srcFolder}/files/**/*.*`, // выбираем файлы и папки с любым расширением на любом уровне вложенности внутри папки files
     images: `${srcFolder}/assets/images/**/*.{jpg,jpeg,png,gif,webp}`,
     svg: `${srcFolder}/assets/images/**/*.svg`,
-    // fonts: `${buildFolder}/assets/fonts/*.*`,
+    fonts: `${srcFolder}/assets/fonts/*.*`,
   },
   watch: {
     js: `${srcFolder}/assets/js/**/*.js`,
-    scss: `${srcFolder}/scss/*.scss`,
+    scss: `${srcFolder}/scss/**/*.scss`,
     html: `${srcFolder}/**/*.html`,
     // files: `${srcFolder}/files/**/*.*`,
     images: `${srcFolder}/assets/images/**/*.{jpg,jpeg,png,gif,webp,svg}`,

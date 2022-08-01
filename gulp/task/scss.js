@@ -15,6 +15,7 @@ export const scss = () => {
     includePaths: ['node_modules']
   }))
   .pipe(app.plugins.replace(/@img\//g, ''))
+  .pipe(app.plugins.replace(/@root-directory\//g, ''))
   .pipe(autoprefixer({
     grid: true,
     overrideBrowserlist: ['last 5 versions'],

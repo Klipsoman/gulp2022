@@ -1,19 +1,26 @@
-// export const isWebp = () => {
-//   function testWebP(callback) {
-
-//     var webP = new Image();
-//     webP.onload = webP.onerror = function () {
-//       callback(webP.height == 2);
-//     };
-//     webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-//   }
-
-//   testWebP(function (support) {
-
-//     if (support == true) {
-//       document.querySelector('body').classList.add('webp');
-//     } else {
-//       document.querySelector('body').classList.add('no-webp');
-//     }
-//   });
-// }
+export const checkMobile = {
+  android() {
+    return navigator.userAgent.match(/Android/i);
+  },
+  blackBerry() {
+    return navigator.userAgent.match(/BlackBerry/i);
+  },
+  iOS() {
+    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  },
+  opera() {
+    return navigator.userAgent.match(/Opeta Mini/i);
+  },
+  windows() {
+    return navigator.userAgent.match(/IEMobile/i);
+  },
+  isMobile() {
+    return (
+      this.android() ||
+      this.blackBerry() ||
+      this.iOS() ||
+      this.opera() ||
+      this.windows()
+    )
+  }
+};
