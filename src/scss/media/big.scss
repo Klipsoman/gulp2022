@@ -196,7 +196,7 @@
 
   .news {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 20px;
     &__image-block {
       margin-right: 82px;
     }
@@ -206,6 +206,7 @@
   }
 
   .main-footer {
+    padding-top: 80px;
     padding-bottom: 40px;
     &__bottom {
       font-size: 13px;

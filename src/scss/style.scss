@@ -1027,7 +1027,7 @@ textarea {
 
 .news {
   padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   &__header {
     font-size: 48px;
     margin-bottom: 50px;
@@ -1081,6 +1081,7 @@ textarea {
 }
 
 .main-footer {
+  padding-top: 100px;
   padding-bottom: 50px;
   &__bottom {
     display: grid;

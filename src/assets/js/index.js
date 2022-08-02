@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   const closeModalFormBtn = document.querySelector('#modal-form .modal-form__close');
 
   document.addEventListener("scroll", (e) => {
-    if (header.offsetTop > 30) {
+    if (window.pageYOffset > 30) {
       headerContent.style.borderBottom = "1px solid #CACACA";
       return;
     }
@@ -72,14 +72,16 @@ document.addEventListener("DOMContentLoaded", (e) => {
   }
 
   // Modal
-  innerBtn.addEventListener("click", (e) => {
-    modalForm.classList.add('modal-form__visible');
-  })
+  if (innerBtn) {
+    innerBtn.addEventListener("click", (e) => {
+      modalForm.classList.add('modal-form__visible');
+    })
 
-  closeModalFormBtn.addEventListener('click', closeModal)
+    closeModalFormBtn.addEventListener('click', closeModal)
 
-  function closeModal() {
-    modalForm.classList.remove('modal-form__visible');
+    function closeModal() {
+      modalForm.classList.remove('modal-form__visible');
+    }
   }
 
   // init sliders 
