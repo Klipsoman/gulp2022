@@ -1,11 +1,8 @@
 @media (min-width: 1000px) and (max-width: 1399px) {
+  // main styles
   p {
     font-size: 18px;
   }
-  // .link {
-  //   font-size: 16px;
-  // }
-
   .header {
     &__navigation {
       justify-content: flex-end;
@@ -235,5 +232,7 @@
         width: 23px;
       }
     }
-  }
+  }  
 }
+
+@import '../pages/media/big.scss';

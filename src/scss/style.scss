@@ -17,16 +17,13 @@ $color-border: #cacaca;
 $color-additional: #9f9f9f;
 $color-hover-light: #B5C4D4;
 $color-hover-yellow: #ECE2D2;
+$color-yellow: #C09A5D;
 $bgc-mobile: #f0f5fb;
 
 * {
   box-sizing: border-box;
   transition: ease 0.4s;
 }
-
-// html, body {
-//   height: 100%;
-// }
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -69,6 +66,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
 ul,
 ol {
   list-style: none;
@@ -82,14 +84,6 @@ textarea {
   border-radius: 0;
   -webkit-border-radius: 0px;
 }
-
-// img {
-//   width: 100%;
-// }
-
-// .wrapper {
-
-// }
 
 .container {
   max-width: 1240px;
@@ -108,6 +102,7 @@ textarea {
 .section-header {
   font-size: $font-size-header;
 }
+
 // link
 .link {
   &:hover {
@@ -1234,6 +1229,8 @@ textarea {
     }
   }
 }
+
+@import './pages/style';
 
 @import "./media/big";
 @import "./media/medium";
