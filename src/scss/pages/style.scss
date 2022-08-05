@@ -73,9 +73,9 @@
   }
 }
 
-// run-systems
-// offers
+// run-systems.html
 .run-systems {
+  // offers
   .offers {
     padding-top: 150px;
     padding-bottom: 150px;
@@ -204,13 +204,26 @@
         margin-bottom: 20px;
       }
       &__list {
-        // padding-left: 20px;
+        padding-right: 90px;
+        line-height: 140%;
         list-style-position: inside;
         list-style-type: disc;
+      }
+      &__item {
+        margin-left: 10px;
       }
     }
     & > * + * {
       margin-top: 150px;
+    }
+  }
+  .slider {
+    margin-bottom: 200px;
+    &__header {
+      margin-bottom: 50px;
+    }
+    .projects__keys {
+      padding-top: 30px;
     }
   }
 }

@@ -7,18 +7,40 @@
   .description {
     font-size: 24px;
   }
+
   .description-secondary {
     font-size: 16px;
     line-height: 135%;
   }
+
   .page-photo-description {
     padding-top: 40px;
     padding-bottom: 40px;
+
     &__right {
       padding-top: 0;
       padding-left: 32px;
+
       & * + * {
         margin-top: 20px;
+      }
+    }
+  }
+
+  // slider
+
+  .swiper {
+    &-slide {
+      min-height: 258px;
+    }
+    & .projects__info {
+      padding-bottom: 15px;
+      padding-left: 20px;
+      .swiper-slide__item:not(:last-child) {
+        margin-bottom: 34px;
+      }
+      .swiper-slide__title {
+        font-size: 16px;
       }
     }
   }
@@ -38,99 +60,125 @@
   }
 
   // run-systems.html
-  // offers
-  .offers {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    .area {
-      display: flex;
-      &__header {
-        margin-bottom: 30px;
-      }
-      &__header + .area__image-box {
-        display: none;
-      }
-      &__list {
-        max-width: 450px;
-      }
-    }
-    // resist
-    .resist {
-      &__header {
-        margin-bottom: 30px;
-      }
-      &__descr-box {
-        display: flex;
-        justify-content: space-between;
-      }
-      &__descr {
-        flex-basis: 50%;
-      }
-      &__descr:first-child {
-        padding-right: 20px;
-      }
-    }
-    // fireresist
-    .fireresist {
-      display: flex;
-      &__header {
-        margin-bottom: 30px;
-      }
-      &__header + .fireresist__image-box {
-        display: none;
-      }
-      &__left {
-        flex-basis: 50%;
-        padding-right: 16px;
-      }
-      &__right {
-        flex-basis: 50%;
-        display: flex;
-      }
-      &__image-box {
-        flex-basis: 50%;
-      }
-      &__descr-laptop {
-        display: none;
-      }
-    }
-    // economy
-    .economy {
-      &__header {
-        margin-bottom: 30px;
-      }
-      &__descr-box {
-        display: flex;
-        justify-content: space-between;
-      }
-      &__descr {
-        flex-basis: 50%;
-      }
-      &__descr:first-child {
-        padding-right: 20px;
-      }
-    }
-    // roofs
-    .roofs {
-      display: flex;
-      &__left {
-        padding-right: 8px;
-      }
-      &__right {
-        padding-left: 8px;
-      }
-      &__image-box {
-        margin-bottom: 50px;
-      }
-      &__title {
-        margin-bottom: 20px;
-      }
-      &__list {
+  .run-systems {
+    // offers
+    .offers {
+      padding-top: 100px;
+      padding-bottom: 100px;
 
+      .area {
+        display: flex;
+
+        &__header {
+          margin-bottom: 30px;
+        }
+
+        &__header + .area__image-box {
+          display: none;
+        }
+
+        &__list {
+          max-width: 450px;
+        }
       }
-    }
-    & > * + * {
-      margin-top: 100px;
+
+      // resist
+      .resist {
+        &__header {
+          margin-bottom: 30px;
+        }
+
+        &__descr-box {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        &__descr {
+          flex-basis: 50%;
+        }
+
+        &__descr:first-child {
+          padding-right: 20px;
+        }
+      }
+
+      // fireresist
+      .fireresist {
+        display: flex;
+
+        &__header {
+          margin-bottom: 30px;
+        }
+
+        &__header + .fireresist__image-box {
+          display: none;
+        }
+
+        &__left {
+          flex-basis: 50%;
+          padding-right: 16px;
+        }
+
+        &__right {
+          flex-basis: 50%;
+          display: flex;
+        }
+
+        &__image-box {
+          flex-basis: 50%;
+        }
+
+        &__descr-laptop {
+          display: none;
+        }
+      }
+
+      // economy
+      .economy {
+        &__header {
+          margin-bottom: 30px;
+        }
+
+        &__descr-box {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        &__descr {
+          flex-basis: 50%;
+        }
+
+        &__descr:first-child {
+          padding-right: 20px;
+        }
+      }
+
+      // roofs
+      .roofs {
+        display: flex;
+        &__left {
+          padding-right: 8px;
+        }
+        &__right {
+          padding-left: 8px;
+        }
+        &__image-box {
+          margin-bottom: 40px;
+        }
+
+        &__title {
+          margin-bottom: 20px;
+        }
+
+        &__list {
+          padding-right: 5px;
+          line-height: 135%;
+        }
+      }
+
+      & > * + * {
+        margin-top: 100px;
+      }
     }
   }
 }

@@ -9,7 +9,11 @@
       }
     }
   }
-
+  .swiper-slide {
+    &__info {
+      bottom: 6px;
+    }
+  }
 }
 
 @media (min-width: 1011px) and (max-width: 1150px) {
@@ -23,7 +27,11 @@
       }
     }
   }
-  
+  .swiper-slide {
+    &__info {
+      bottom: 5px;
+    }
+  }
 }
 
 @media (min-width: 1151px) {
@@ -37,5 +45,9 @@
       }
     }
   }
-  
+  .swiper-slide {
+    &__info {
+      bottom: 4px;
+    }
+  }
 }
