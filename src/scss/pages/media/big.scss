@@ -181,4 +181,103 @@
       }
     }
   }
+
+  // steel-frames.html
+  .steel-frames {
+    & > * + * {
+      margin-top: 80px;
+    }
+    .description-inner {
+      &__block {
+        display: flex;
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      &__left {
+        flex-basis: 50%;
+        padding-right: 10px;
+      }
+      &__right {
+        flex-basis: 50%;
+        padding-right: 5px;
+      }
+    }
+
+    .buildings {
+      &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      &__item:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      &__item:last-child {
+        padding-top: 11px;
+        & .build-card__top {
+          & .build-card__image-box {
+            min-width: 140px;
+            max-width: 140px;
+          }
+        }
+      }
+    }
+
+    .build-card {
+      &__image-box {
+        min-width: 228px;
+        max-width: 228px;
+        min-height: 161px;
+        max-height: 161px;
+      }
+    }
+
+    .catalog {
+      &__body {
+        font-size: 16px;
+        line-height: 135%;
+      }
+    }
+
+    .bvz-links {
+      &__item:not(:first-child) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  // bvz.html (Быстро-возводимые здания)
+  .bvz {
+    .products {
+      &__item {
+        padding-top: 50px;
+      }
+      &__item:not(:first-child) {
+        padding-top: 75px;
+      }
+      &__left {
+        padding-right: 87px;
+      }
+      &__center {
+        padding-right: 34px;
+      }
+      &__right {
+        padding-left: 5px;
+      }
+      &__link::after {
+        bottom: 3px;
+      }
+    }
+
+    // slider
+    .slider {
+      margin-bottom: 120px;
+      margin-top: 45px;
+      & .projects__keys {
+        padding-top: 0;
+        margin-top: -50px;
+        justify-content: center;
+      }
+    }
+  }
 }

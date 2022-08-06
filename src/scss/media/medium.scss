@@ -54,20 +54,20 @@
         overflow: auto;
       }
       & .header__navigation {
-          top: 57px;
-          left: 0;
-          right: 0;
-          bottom: 87px;
-          background-color: #F0F5Fb;
+        top: 57px;
+        left: 0;
+        right: 0;
+        bottom: 87px;
+        background-color: #f0f5fb;
       }
       & .header__tel {
-          display: block;
-          position: fixed;
-          bottom: 25px;
-          left: 50px;
-          & .telephone__mobile {
-            display: initial;
-          }
+        display: block;
+        position: fixed;
+        bottom: 25px;
+        left: 50px;
+        & .telephone__mobile {
+          display: initial;
+        }
       }
       & .header__additional-box {
         position: fixed;
@@ -133,7 +133,7 @@
         & > li:hover > ul {
           opacity: 0;
           visibility: hidden;
-        } 
+        }
         & > li.submenu-active > ul {
           display: block;
           position: static;
@@ -144,14 +144,14 @@
           padding-bottom: 0;
         }
         & > li.hasSubmenu::after {
-          content: url('../../assets/images/arrow-menu.svg');
+          content: url("../../assets/images/arrow-menu.svg");
           position: absolute;
           top: 15px;
           right: 50px;
           transform: rotateZ(180deg);
         }
         & > li.hasSubmenu.submenu-active::after {
-          content: url('../../assets/images/arrow-menu.svg');
+          content: url("../../assets/images/arrow-menu.svg");
           transform: rotateZ(360deg);
         }
         & > li:not(:last-child) {
@@ -357,7 +357,6 @@
   }
 
   // Projects
-
   .projects {
     padding-bottom: 45px;
     padding-top: 45px;
@@ -376,7 +375,26 @@
       top: -4px;
       padding-top: 10px;
       opacity: 1;
-      background-color: #7F8F9F;
+      background-color: #7f8f9f;
+
+      &__item {
+        font-size: 10px;
+      }
+
+      &__title {
+        font-size: 16px;
+      }
+    }
+  }
+
+  // Swiper slider
+  .swiper {
+    &-slide__info {
+      position: relative;
+      top: -4px;
+      padding-top: 10px;
+      opacity: 1;
+      background-color: #7f8f9f;
 
       &__item {
         font-size: 10px;
@@ -638,15 +656,14 @@
       grid-template-columns: repeat(2, 1fr);
     }
 
-    &__list>li>ul>li>a {
+    &__list > li > ul > li > a {
       font-size: 14px;
       color: #585858;
     }
 
-    &__list>li:nth-child(1),
-    &__list>li:nth-child(2) {
+    &__list > li:nth-child(1),
+    &__list > li:nth-child(2) {
       margin-bottom: 40px;
-      ;
     }
   }
 
@@ -667,4 +684,4 @@
   }
 }
 
-@import '../pages/media/medium.scss';
+@import "../pages/media/medium.scss";

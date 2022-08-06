@@ -227,3 +227,172 @@
     }
   }
 }
+
+// steel-frames.html
+.steel-frames {
+  & > * + * {
+    margin-top: 100px;
+  }
+
+  .description-inner {
+    background-color: $bgc-mobile;
+    &__block {
+      display: flex;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    &__left {
+      flex-basis: 50%;
+      // max-width: 83.33%;
+      padding-right: 93px;
+    }
+    &__right {
+      flex-basis: 50%;
+      padding-right: 93px;
+      // max-width: 83.33%;
+    }
+  }
+
+  .buildings {
+    &__list {
+      display: flex;
+    }
+    &__item {
+      flex-basis: 25%;
+    }
+    &__item:not(:last-child) {
+      margin-right: 22px;
+    }
+    &__item:hover {
+      background-color: $bgc-mobile;
+    }
+    &__item:last-child {
+      padding-top: 33px;
+      & .build-card__top {
+        margin-bottom: 43px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .build-card {
+    padding-bottom: 30px;
+    border: 1px solid #585858;
+    &__top {
+      margin-bottom: 53px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__bottom {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__list {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+
+  .catalog {
+    &__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 19px;
+      padding-bottom: 15px;
+      border-top: 1px solid $color-normal;
+      border-bottom: 1px solid $color-normal;
+      font-size: 18px;
+      line-height: 140%;
+    }
+    &__link {
+      color: $color-hover;
+    }
+    &__download-link {
+      color: $color-header;
+    }
+  }
+
+  .bvz-links {
+    &__item:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+
+  .slider {
+    margin-bottom: 200px;
+    &__header {
+      margin-bottom: 50px;
+    }
+    .projects__keys {
+      padding-top: 30px;
+    }
+  }
+}
+
+// bvz.html (Быстро-возводимые здания)
+.bvz {
+  // products
+  .products {
+    &__item {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding-bottom: 75px;
+    }
+    &__item:not(:first-child) {
+      padding-top: 75px;
+    }
+    &__item:not(:last-child) {
+      border-bottom: 1px solid $color-border;
+    }
+    &__left {
+      padding-right: 150px;
+    }
+    &__center {
+      padding-right: 150px;
+    }
+    &__link-box + .products__descr {
+      display: none;
+      padding-right: 10px;
+    }
+    &__link::after {
+      bottom: 3.5px;
+    }
+  }
+  // slider
+  .slider {
+    margin-top: 125px;
+    margin-bottom: 200px;
+    & .slider__header {
+      margin-bottom: 30px;
+    }
+    & .projects__keys {
+      padding-top: 0;
+      margin-top: 50px;
+      justify-content: center;
+    }
+    #bvz__swiper {
+      & .swiper-slide__body {
+        min-height: 187px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border: 1px solid $color-border;
+        & h3 {
+          margin-bottom: 10px;
+        }
+        & ul {
+          font-size: 14px;
+        }
+      }
+      & .swiper-slide__body:hover {
+        background-color: $bgc-mobile;
+      }
+    }
+  }
+}

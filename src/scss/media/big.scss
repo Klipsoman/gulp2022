@@ -21,6 +21,8 @@
   }
 
   .produce {
+    padding-top: 120px;
+    padding-bottom: 70px;
     &__item {
       padding-bottom: 27px;
     }
@@ -88,6 +90,8 @@
       padding-top: 35px;
     }
   }
+
+  // swiper slider
   .swiper {
     &-slide {
       min-height: 258px;
@@ -102,11 +106,22 @@
         font-size: 16px;
       }
     }
+    &-slide__info {
+      padding-bottom: 15px;
+      padding-left: 20px;
+      &__item:not(:last-child) {
+        margin-bottom: 34px;
+      }
+      &__title {
+        font-size: 16px;
+      }
+    }
   }
 
   // Reviews
 
   .reviews {
+    padding-top: 60px;
     &__review {
       font-size: 16px;
     }
@@ -232,7 +247,7 @@
         width: 23px;
       }
     }
-  }  
+  }
 }
 
-@import '../pages/media/big.scss';
+@import "../pages/media/big.scss";
