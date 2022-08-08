@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html-templates/head.html')
+  <body>
+    @@include('html-templates/header.html')
+    <!-- news page Inner -->
+    <div class="news-page-inner">
+      <div class="container">
+        <h1 class="news-page-inner__header news-page-header">
+          Компания Kingspan передаёт свои активы в России в управление российскому менеджменту
+        </h1>
+      </div>
+    </div>
+
+    <!-- single-news-page -->
+    <div class="single-news-page">
+      <!-- single-news -->
+      <div class="single-news">
+        <div class="container">
+          <div class="single-news__content">
+            <div class="single-news__left">
+              <div class="single-news__image-box">
+                <img src="assets/images/single-news.jpg" alt="" class="single-news__image" />
+              </div>
+            </div>
+            <div class="single-news__right">
+              <div class="single-news__date">
+                <time class="single-news__time">5 апреля 2022</time>
+              </div>
+              <h3 class="single-news__title description">
+                Компания Kingspan сообщила о решении передать свои активы в России в управление российскому менеджменту
+              </h3>
+              <p class="single-news__text description-secondary description-secondary--black">
+                Международная компания Kingspan приняла решение передать свои активы в управление локальному
+                менеджменту. Хотя решение о передаче было принято в начале марта, нам потребовалось несколько недель,
+                чтобы соблюсти необходимые процедуры в интересах наших сотрудников, чьи безопасность и благополучие
+                являются основными приоритетами для компании Kingspan.
+              </p>
+              <p class="single-news__text description-secondary description-secondary--black">
+                Наши главные задачи — обеспечение интересов наших клиентов, поддержание бесперебойного производства и
+                поставок, а также сохранение высокопрофессиональной команды. Оба завода в России по производству
+                сэндвич-панелей и металлоконструкций в Ленинградской области и Ставропольском крае продолжат работу и
+                выпуск продукции с сохранением стандартов качества. В настоящее время предприятия обеспечены необходимым
+                сырьем и долгосрочными заказами как из России, так и из других стран.
+              </p>
+              <div class="single-news__link">
+                <a href="#" class="single-news__link-item link link-arrow">Вернуться к списку новостей</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subscribe -->
+      @@include('html-templates/subscribe.html', {
+        "title": "Подписаться на новости Ruspan"
+      })
+
+    </div>
+
+    @@include('html-templates/footer.html')
+  </body>
+</html>

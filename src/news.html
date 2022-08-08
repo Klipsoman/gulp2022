@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html-templates/head.html')
+  <body>
+    @@include('html-templates/header.html')
+    <!-- Page Inner -->
+    @@include('html-templates/page-inner.html', { "header": "Новости"})
+
+    <!-- news-page -->
+    <div class="news-page">
+      <div class="news">
+        <div class="container">
+          <div class="news__content">
+
+            @@loop('html-templates/news-item.html', [
+              {
+                "title": "Компания Kingspan передаёт свои активы в России в управление российскому менеджменту",
+                "image-src": "assets/images/news1.png",
+                "date": "5 апреля 2022"
+              },
+              {
+                "title": "Экологический проект Kingspan по сбору и утилизации старых шин продолжает работу в 2022 г.",
+                "image-src": "assets/images/news2.jpg",
+                "date": "2 марта 2022"
+              },
+              {
+                "title": "Приглашаем вас посетить стенд Kingspan на выставке ЮгБилд-2022 в Краснодаре",
+                "image-src": "assets/images/news3.jpg",
+                "date": "21 февраля 2022"
+              },
+              {
+                "title": "Группа компаний Kingspan включена в список лидеров международного экологического рейтинга CDP",
+                "image-src": "assets/images/news4.jpg",
+                "date": "16 февраля 2022"
+              },
+              {
+                "title": "Компания Kingspan передаёт свои активы в России в управление российскому менеджменту",
+                "image-src": "assets/images/news1.png",
+                "date": "5 апреля 2022"
+              },
+              {
+                "title": "Компания Kingspan передаёт свои активы в России в управление российскому менеджменту",
+                "image-src": "assets/images/news1.png",
+                "date": "5 апреля 2022"
+              },
+            ])
+
+          </div>
+          <!-- pagination -->
+          <div class="news__pagination pagination">
+            <div class="container">
+              <div class="pagination__items">
+                <div class="pagination__prev"></div>
+                <div class="pagination__item current">1</div>
+                <div class="pagination__item">2</div>
+                <div class="pagination__item">3</div>
+                <div class="pagination__next"></div>
+              </div>
+            </div>
+          </div>
+          <!-- !pagination -->
+        </div>
+      </div>
+
+      <!-- Subscribe -->
+      @@include('html-templates/subscribe.html', { "title": "Подписаться на новости Ruspan" })
+    </div>
+
+    @@include('html-templates/footer.html')
+  </body>
+</html>

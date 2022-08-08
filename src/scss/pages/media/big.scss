@@ -1,7 +1,13 @@
 @media (min-width: 1000px) and (max-width: 1399px) {
+  // Common
   .page-inner {
     padding-top: 100px;
     padding-bottom: 60px;
+  }
+
+  .news-page-inner {
+    padding-top: 100px;
+    padding-bottom: 50px;
   }
 
   .description {
@@ -27,6 +33,17 @@
     }
   }
 
+  // subscribe
+  .subscribe {
+    &__left {
+      flex-basis: 325px;
+    }
+    &__right {
+      max-width: none;
+      flex-grow: 1;
+    }
+  }
+
   // slider
 
   .swiper {
@@ -44,6 +61,8 @@
       }
     }
   }
+
+  // Pages css:
 
   // designing-technical-support.html
 
@@ -277,6 +296,53 @@
         padding-top: 0;
         margin-top: -50px;
         justify-content: center;
+      }
+    }
+  }
+
+  // single-news.html
+  .single-news-page {
+    & > * + * {
+      margin-top: 104px;
+    }
+    & > :last-child {
+      margin-bottom: 100px;
+    }
+    // single-news
+    .single-news {
+      &__left {
+        flex-basis: 300px;
+      }
+      &__right {
+        padding-left: 24px;
+      }
+      &__text {
+        margin-top: 30px;
+      }
+      &__link {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  // news-page.html
+
+  .news-page {
+    & > * + * {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    // news list
+    .news {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    // subscribe
+    .subscribe {
+      &__left {
+        padding-right: 98px;
       }
     }
   }

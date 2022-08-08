@@ -1,3 +1,4 @@
+// Common
 .page-inner {
   padding-top: 150px;
   padding-bottom: 100px;
@@ -6,6 +7,17 @@
 .page-header {
   font-size: 64px;
   line-height: 83px;
+  color: $color-header;
+}
+
+.news-page-inner {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.news-page-header {
+  font-size: 48px;
+  line-height: 62px;
   color: $color-header;
 }
 
@@ -25,6 +37,10 @@
   font-size: 18px;
   color: $color-normal;
   line-height: 140%;
+}
+
+.description-secondary--black {
+  color: $color-header;
 }
 
 .page-photo-description {
@@ -54,6 +70,71 @@
     object-fit: cover;
   }
 }
+
+// subscribe
+.subscribe {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__right {
+    max-width: 589px;
+    flex-basis: 589px;
+  }
+  &__form {
+    display: flex;
+  }
+  &__btn {
+    min-width: 160px;
+    padding: 12px 30px;
+    background-color: #7f8f9f;
+    color: $color-white;
+  }
+  &__input {
+    margin-right: 20px;
+    padding: 12px 13px;
+    font-size: 18px;
+  }
+  &__privacy {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-additional;
+  }
+  &__privacy-link {
+    text-decoration: underline;
+  }
+}
+
+.pagination {
+  font-size: 18px;
+  color: $color-normal;
+  &__items {
+    display: flex;
+    height: 26px;
+    align-items: center;
+    justify-content: center;
+    & > * + * {
+      margin-left: 10px;
+    }
+  }
+  &__item.current,
+  &__item.disabled {
+    color: $color-border;
+  }
+  &__prev {
+    width: 24px;
+    height: 14px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyNSAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTggMUwxIDhMOCAxNSIgc3Ryb2tlPSIjQ0FDQUNBIi8+CjxwYXRoIGQ9Ik0wLjk5OTk5OSA4TDI1IDgiIHN0cm9rZT0iI0NBQ0FDQSIvPgo8L3N2Zz4K');
+  }
+  &__next {
+    width: 24px;
+    height: 14px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyNSAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3IDFMMjQgOEwxNyAxNSIgc3Ryb2tlPSIjNTg1ODU4Ii8+CjxwYXRoIGQ9Ik0yNCA4TDAgOCIgc3Ryb2tlPSIjNTg1ODU4Ii8+Cjwvc3ZnPgo=');
+  }
+}
+
+// Pages css:
 
 // designing-technical-support.html
 // abouts
@@ -393,6 +474,64 @@
       & .swiper-slide__body:hover {
         background-color: $bgc-mobile;
       }
+    }
+  }
+}
+
+// single-news.html
+.single-news-page {
+  & > * + * {
+    margin-top: 150px;
+  }
+  & > :last-child {
+    margin-bottom: 200px;
+  }
+  // single-news
+  .single-news {
+    &__content {
+      display: flex;
+    }
+    &__left {
+      flex-basis: 385px;
+      flex-shrink: 0;
+    }
+    &__right {
+      padding-left: 226px;
+    }
+    &__title {
+      margin-top: 20px;
+    }
+    &__text {
+      margin-top: 50px;
+    }
+    &__link {
+      margin-top: 100px;
+    }
+    &__time {
+      font-size: 12px;
+    }
+  }
+}
+
+// news-page.html
+
+.news-page {
+  & > * + * {
+    margin-top: 150px;
+    margin-bottom: 200px;
+  }
+  // news list
+  .news {
+    padding-top: 0;
+    padding-bottom: 0;
+    &__pagination {
+      margin-top: 50px;
+    }
+  }
+  // subscribe
+  .subscribe {
+    &__title {
+      max-width: 242px;
     }
   }
 }

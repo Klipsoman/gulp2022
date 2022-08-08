@@ -1,4 +1,5 @@
 @media (min-width: 320px) and (max-width: 639px) {
+  // Common
   .page-inner {
     padding-top: 50px;
     padding-bottom: 30px;
@@ -8,6 +9,16 @@
     font-size: 35px;
     line-height: 120%;
     color: $color-header;
+  }
+
+  .news-page-inner {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .news-page-header {
+    font-size: 30px;
+    line-height: 120%;
   }
 
   .page-title {
@@ -45,6 +56,35 @@
     }
   }
 
+  // subscribe
+  .subscribe {
+    &__content {
+      flex-wrap: wrap;
+    }
+    &__left {
+      flex-basis: 100%;
+    }
+    &__right {
+      flex-basis: 100%;
+      margin-top: 20px;
+      max-width: none;
+    }
+    &__form {
+      flex-wrap: wrap;
+    }
+    &__input {
+      flex-basis: 100%;
+      margin-right: 0px;
+    }
+    &__btn {
+      flex-basis: 100%;
+      margin-top: 15px;
+    }
+    &__privacy {
+      margin-top: 20px;
+    }
+  }
+
   // Slider
 
   .swiper {
@@ -64,6 +104,8 @@
       }
     }
   }
+
+  // Pages css:
 
   // designing-technical-support.html
   // abouts
@@ -383,6 +425,73 @@
     .slider {
       margin-bottom: 80px;
       margin-top: 20px;
+    }
+  }
+
+  // single-news.html
+  .single-news-page {
+    & > * + * {
+      margin-top: 80px;
+    }
+    & > :last-child {
+      margin-bottom: 100px;
+    }
+    // single-news
+    .single-news {
+      &__content {
+        flex-wrap: wrap;
+      }
+      &__left {
+        flex-basis: 300px;
+      }
+      &__right {
+        padding-left: 0px;
+      }
+      &__title {
+        margin-top: 15px;
+      }
+      &__text {
+        margin-top: 30px;
+      }
+      &__link {
+        margin-top: 50px;
+      }
+      &__date {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  // news-page.html
+
+  .news-page {
+    & > * + * {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+
+    // news list
+    .news {
+      padding-top: 0;
+      padding-bottom: 0;
+      &__link {
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 1px;
+          width: 100%;
+          background-color: $color-normal;
+          transition: ease 0.3s;
+        }
+      }
+    }
+    // subscribe
+    .subscribe {
+      &__title {
+        max-width: none;
+      }
     }
   }
 }
