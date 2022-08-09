@@ -106,6 +106,7 @@
   }
 }
 
+// pagination
 .pagination {
   font-size: 18px;
   color: $color-normal;
@@ -133,6 +134,37 @@
     background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyNSAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3IDFMMjQgOEwxNyAxNSIgc3Ryb2tlPSIjNTg1ODU4Ii8+CjxwYXRoIGQ9Ik0yNCA4TDAgOCIgc3Ryb2tlPSIjNTg1ODU4Ii8+Cjwvc3ZnPgo=');
   }
 }
+
+  // factory
+  .factory {
+    &__header,
+    &__tel,
+    &__mail,
+    &__address,
+    &__social {
+      font-style: normal;
+    }
+    &__content {
+      display: flex;
+    }
+    &__left {
+      flex-basis: 306px;
+      padding-right: 87px;
+    }
+    &__center {
+      flex-basis: 305px;
+      padding-right: 48px;
+    }
+    &__right {
+      flex-basis: 589px;
+    }
+    &__coords {
+      margin-top: 20px;
+    }
+    &__map {
+      -webkit-filter: grayscale(100%);
+    }
+  }
 
 // Pages css:
 
@@ -532,6 +564,95 @@
   .subscribe {
     &__title {
       max-width: 242px;
+    }
+  }
+}
+
+// About.html page
+.about-page {
+  & > * + * {
+    margin-top: 150px;
+  }
+  // location
+  .location {
+    padding: 100px 0;
+    background-color: #004289;
+    &__header,
+    &__tel,
+    &__mail,
+    &__address,
+    &__social {
+      font-style: normal;
+      color: $color-white;
+    }
+    &__content {
+      display: flex;
+    }
+    &__left {
+      flex-basis: 306px;
+    }
+    &__center {
+      flex-basis: 305px;
+      padding-right: 57px;
+      & :nth-child(2) {
+        margin-top: 18px;
+      }
+      & :nth-child(3) {
+        margin-top: 18px;
+      }
+      & :nth-child(4) {
+        margin-top: 52px;
+      }
+      & :nth-child(5) {
+        margin-top: 46px;
+      }
+    }
+    &__right {
+      flex-basis: 589px;
+    }
+    &__map {
+      -webkit-filter: grayscale(100%);
+    }
+  }
+
+  // managers
+  .managers {
+    &__table {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    &__table-title {
+      background-color: $bgc-mobile;
+      padding: 19px 20px 16px;
+      margin-bottom: 60px;
+    }
+    &__row {
+      padding-top: 19px;
+      padding-bottom: 60px;
+      display: flex;
+      border-top: 1px solid $color-normal;
+    }
+    &__left {
+      flex-basis: 306px;
+      padding-right: 86px; 
+      padding-bottom: 20px;
+    }
+    &__right {
+      flex-basis: 894px;
+    }
+    &__item {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding-top: 19px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid $color-normal;
+    }
+    &__item:first-child {
+      padding-top: 0;
+    }
+    &__mail {
+      text-decoration: underline;
+      color: $color-hover;
     }
   }
 }

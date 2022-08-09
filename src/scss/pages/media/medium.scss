@@ -80,6 +80,27 @@
     }
   }
 
+  // factory
+  .factory {
+    &__content {
+      flex-wrap: wrap;
+    }
+    &__left {
+      flex-basis: 50%;
+      flex-shrink: 0;
+      padding-right: 88px;
+    }
+    &__center {
+      flex-basis: 50%;
+      flex-shrink: 0;
+      padding-right: 60px;
+    }
+    &__right {
+      margin-top: 40px;
+      flex-basis: 100%;
+    }
+  }
+
   // Slider
   .swiper {
     .projects__info {
@@ -454,6 +475,98 @@
     .subscribe {
       &__title {
         max-width: none;
+      }
+    }
+  }
+
+  // About.html page
+  .about-page {
+    & > * + * {
+      margin-top: 80px;
+    }
+    // location
+    .location {
+      padding: 50px 0;
+      background-color: #004289;
+      &__header,
+      &__tel,
+      &__mail,
+      &__address,
+      &__social {
+        font-style: normal;
+        color: $color-white;
+      }
+      &__content {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &__left {
+        flex-basis: 50%;
+        flex-shrink: 0;
+      }
+      &__center {
+        flex-basis: 50%;
+        flex-shrink: 0;
+        padding-right: 20px;
+        & :nth-child(2) {
+          margin-top: 20px;
+        }
+        & :nth-child(3) {
+          margin-top: 20px;
+        }
+        & :nth-child(4) {
+          margin-top: 56px;
+        }
+        & :nth-child(5) {
+          margin-top: 30px;
+        }
+      }
+      &__right {
+        flex-basis: 100%;
+        flex-grow: 1;
+        margin-top: 64px;
+      }
+    }
+    // managers
+    .managers {
+      &__table {
+        margin-top: 30px;
+      }
+      &__table-title {
+        margin-bottom: 40px;
+      }
+      &__row {
+        display: flex;
+        flex-wrap: wrap;
+        border-top: none;
+      }
+      &__left {
+        flex-basis: 100%;
+        padding-right: 0px;
+      }
+      &__right {
+        flex-basis: 894px;
+      }
+      &__item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+          'name tel'
+          'name mail';
+      }
+      &__item:first-child {
+        border-top: 1px solid $color-normal;
+        padding-top: 20px;
+      }
+      &__tel-box {
+        grid-area: tel;
+      }
+      &__name-box {
+        grid-area: name;
+      }
+      &__mail-box {
+        padding-top: 20px;
+        grid-area: mail;
       }
     }
   }
