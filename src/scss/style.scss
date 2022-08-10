@@ -197,10 +197,14 @@ textarea {
 
 .link-arrow-white {
   color: $color-white;
+  transition: ease 0.4s;
   &::after {
     content: url('./assets/images/arrow-white.svg');
     position: absolute;
     margin-left: 8px;
+  }
+  &:hover::after {
+    opacity: .7;
   }
 }
 

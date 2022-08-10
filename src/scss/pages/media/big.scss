@@ -1,7 +1,13 @@
 @media (min-width: 1000px) and (max-width: 1399px) {
+  // Common
   .page-inner {
     padding-top: 100px;
     padding-bottom: 60px;
+  }
+
+  .news-page-inner {
+    padding-top: 100px;
+    padding-bottom: 50px;
   }
 
   .description {
@@ -27,6 +33,34 @@
     }
   }
 
+  // subscribe
+  .subscribe {
+    &__left {
+      flex-basis: 325px;
+    }
+    &__right {
+      max-width: none;
+      flex-grow: 1;
+    }
+  }
+
+  // factory
+  .factory {
+    &__left {
+      flex-basis: 244px;
+      flex-shrink: 0;
+      padding-right: 25px;
+    }
+    &__center {
+      flex-basis: 244px;
+      flex-shrink: 0;
+      padding-right: 44px;
+    }
+    &__right {
+      flex-basis: 472px;
+    }
+  }
+
   // slider
 
   .swiper {
@@ -44,6 +78,8 @@
       }
     }
   }
+
+  // Pages css:
 
   // designing-technical-support.html
 
@@ -281,6 +317,99 @@
     }
   }
 
+
+  // single-news.html
+  .single-news-page {
+    & > * + * {
+      margin-top: 104px;
+    }
+    & > :last-child {
+      margin-bottom: 100px;
+    }
+    // single-news
+    .single-news {
+      &__left {
+        flex-basis: 300px;
+      }
+      &__right {
+        padding-left: 24px;
+      }
+      &__text {
+        margin-top: 30px;
+      }
+      &__link {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  // news-page.html
+  .news-page {
+    & > * + * {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    // news list
+    .news {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    // subscribe
+    .subscribe {
+      &__left {
+        padding-right: 98px;
+      }
+    }
+  }
+
+  // About.html page
+  .about-page {
+    & > * + * {
+      margin-top: 100px;
+    }
+    // location
+    .location {
+      padding: 80px 0;
+      background-color: #004289;
+      &__header,
+      &__tel,
+      &__mail,
+      &__address,
+      &__social {
+        font-style: normal;
+        color: $color-white;
+      }
+      &__content {
+        display: flex;
+      }
+      &__left {
+        flex-basis: 244px;
+        flex-shrink: 0;
+      }
+      &__center {
+        flex-basis: 244px;
+        flex-shrink: 0;
+        padding-right: 44px;
+        & :nth-child(2) {
+          margin-top: 18px;
+        }
+        & :nth-child(3) {
+          margin-top: 18px;
+        }
+        & :nth-child(4) {
+          margin-top: 32px;
+        }
+        & :nth-child(5) {
+          margin-top: 30px;
+        }
+      }
+      &__right {
+        flex-basis: auto;
+        flex-grow: 1;
+      }
+
   // 404.html
   .page404 {
     margin-top: 100px;
@@ -300,6 +429,7 @@
     .page-links {
       margin-top: 80px;
       margin-bottom: 120px;
+
     }
   }
 }

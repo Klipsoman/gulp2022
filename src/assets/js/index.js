@@ -1,5 +1,6 @@
 import { checkMobile } from "./utils/index.js";
 import Swiper from "./swiper/index.min.js";
+import { createMaps } from "./maps.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   // Homepage scripts
@@ -52,7 +53,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     document.body.style.overflowY = "hidden";
   });
 
-  // Sector market
+  // Sector market (change image by hover)
   const sectorList = document.querySelector('.sector .sector__right .sector__list');
   if (sectorList) {
     sectorList.addEventListener('mouseover', (e) => {
@@ -216,6 +217,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     },
   });
 
-  
+  // Create maps
+  createMaps();
 
 });

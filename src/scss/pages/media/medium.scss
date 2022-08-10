@@ -1,4 +1,5 @@
 @media (min-width: 640px) and (max-width: 999px) {
+  // Common
   .page-inner {
     padding-top: 50px;
     padding-bottom: 40px;
@@ -8,6 +9,16 @@
     font-size: 35px;
     line-height: 120%;
     color: $color-header;
+  }
+
+  .news-page-inner {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .news-page-header {
+    font-size: 30px;
+    line-height: 120%;
   }
 
   .page-title {
@@ -42,6 +53,54 @@
     }
   }
 
+  // subscribe
+  .subscribe {
+    &__content {
+      flex-wrap: wrap;
+    }
+    &__left {
+      flex-basis: 100%;
+    }
+    &__right {
+      flex-basis: 100%;
+      margin-top: 20px;
+      max-width: none;
+    }
+    &__input {
+      flex-basis: 370px;
+      flex-grow: 1;
+      margin-right: 10px;
+    }
+    &__btn {
+      flex-basis: 220px;
+      flex-grow: 1;
+    }
+    &__privacy {
+      margin-top: 20px;
+    }
+  }
+
+  // factory
+  .factory {
+    &__content {
+      flex-wrap: wrap;
+    }
+    &__left {
+      flex-basis: 50%;
+      flex-shrink: 0;
+      padding-right: 88px;
+    }
+    &__center {
+      flex-basis: 50%;
+      flex-shrink: 0;
+      padding-right: 60px;
+    }
+    &__right {
+      margin-top: 40px;
+      flex-basis: 100%;
+    }
+  }
+
   // Slider
   .swiper {
     .projects__info {
@@ -60,6 +119,8 @@
       }
     }
   }
+
+  // Pages css:
 
   // designing-technical-support.html
 
@@ -352,6 +413,163 @@
     }
   }
 
+
+  // single-news.html
+  .single-news-page {
+    & > * + * {
+      margin-top: 80px;
+    }
+    & > :last-child {
+      margin-bottom: 100px;
+    }
+    // single-news
+    .single-news {
+      &__content {
+        flex-wrap: wrap;
+      }
+      &__left {
+        flex-basis: 300px;
+      }
+      &__right {
+        padding-left: 0px;
+      }
+      &__title {
+        margin-top: 15px;
+      }
+      &__text {
+        margin-top: 30px;
+      }
+      &__link {
+        margin-top: 50px;
+      }
+      &__date {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  // news-page.html
+
+  .news-page {
+    & > * + * {
+      margin-top: 98px;
+      margin-bottom: 100px;
+    }
+    // news list
+    .news {
+      padding-top: 0;
+      padding-bottom: 0;
+      &__link {
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 1px;
+          width: 100%;
+          background-color: $color-normal;
+          transition: ease 0.3s;
+        }
+      }
+    }
+    // subscribe
+    .subscribe {
+      &__title {
+        max-width: none;
+      }
+    }
+  }
+
+  // About.html page
+  .about-page {
+    & > * + * {
+      margin-top: 80px;
+    }
+    // location
+    .location {
+      padding: 50px 0;
+      background-color: #004289;
+      &__header,
+      &__tel,
+      &__mail,
+      &__address,
+      &__social {
+        font-style: normal;
+        color: $color-white;
+      }
+      &__content {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &__left {
+        flex-basis: 50%;
+        flex-shrink: 0;
+      }
+      &__center {
+        flex-basis: 50%;
+        flex-shrink: 0;
+        padding-right: 20px;
+        & :nth-child(2) {
+          margin-top: 20px;
+        }
+        & :nth-child(3) {
+          margin-top: 20px;
+        }
+        & :nth-child(4) {
+          margin-top: 56px;
+        }
+        & :nth-child(5) {
+          margin-top: 30px;
+        }
+      }
+      &__right {
+        flex-basis: 100%;
+        flex-grow: 1;
+        margin-top: 64px;
+      }
+    }
+    // managers
+    .managers {
+      &__table {
+        margin-top: 30px;
+      }
+      &__table-title {
+        margin-bottom: 40px;
+      }
+      &__row {
+        display: flex;
+        flex-wrap: wrap;
+        border-top: none;
+      }
+      &__left {
+        flex-basis: 100%;
+        padding-right: 0px;
+      }
+      &__right {
+        flex-basis: 894px;
+      }
+      &__item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+          'name tel'
+          'name mail';
+      }
+      &__item:first-child {
+        border-top: 1px solid $color-normal;
+        padding-top: 20px;
+      }
+      &__tel-box {
+        grid-area: tel;
+      }
+      &__name-box {
+        grid-area: name;
+      }
+      &__mail-box {
+        padding-top: 20px;
+        grid-area: mail;
+      }
+
   // 404.html
   .page404 {
     margin-top: 50px;
@@ -377,6 +595,7 @@
     .page-links {
       margin-top: 60px;
       margin-bottom: 100px;
+
     }
   }
 }
