@@ -17,7 +17,8 @@ $color-border: #cacaca;
 $color-additional: #9f9f9f;
 $color-hover-light: #b5c4d4;
 $color-hover-yellow: #ece2d2;
-$color-yellow: #c09a5d;
+$color-gold: #c09a5d;
+$color-grey: #7f8f9f;
 $bgc-mobile: #f0f5fb;
 
 * {
@@ -224,6 +225,7 @@ textarea {
   }
 }
 
+// Tags
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -235,18 +237,39 @@ textarea {
     border: 1px solid $color-border;
   }
   & > .tag-gold {
-    color: #C09A5D;
-    border: 1px solid #C09A5D;
+    color: $color-gold;
+    border: 1px solid $color-gold;
   }
   & > .tag-blue {
     color: $color-hover;
     border: 1px solid $color-hover;
   }
   & > .tag-bgc {
-    color: #7F8F9F;
-    border: 1px solid #7F8F9F;
+    color: $color-grey;
+    border: 1px solid $color-grey;
     background-color: $bgc-mobile;
   }
+}
+
+// Links group
+.page-links {
+  &__item:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+
+// btn
+.btn {
+  min-width: 170px;
+  padding: 12px 5px;
+  color: $color-white;
+  font-size: 18px;
+}
+.btn-gold {
+  background-color: $color-gold;
+}
+.btn-grey {
+  background-color: $color-grey;
 }
 
 .telephone {
@@ -606,7 +629,7 @@ textarea {
     }
   }
   &__item--third {
-    background-color: #c09a5d;
+    background-color: $color-gold;
     .produce__title {
       max-width: 256px;
       margin-top: 25px;
@@ -1000,7 +1023,7 @@ textarea {
   &__policy {
     margin-top: 20px;
     font-size: 14px;
-    color: #7f8f9f;
+    color: $color-grey;
   }
   &__policy-link {
     border-bottom: 1px solid;
@@ -1028,7 +1051,7 @@ textarea {
     min-height: 65px;
     padding: 15px;
     margin-top: 20px;
-    background-color: #c09a5d;
+    background-color: $color-gold;
     &:hover {
       background-color: #b5c4d4;
       color: $color-header;

@@ -317,6 +317,7 @@
     }
   }
 
+
   // single-news.html
   .single-news-page {
     & > * + * {
@@ -408,6 +409,27 @@
         flex-basis: auto;
         flex-grow: 1;
       }
+
+  // 404.html
+  .page404 {
+    margin-top: 100px;
+    // error 404 banner
+    .error404 {
+      &__content {
+        padding: 40px 325px 50px 50px;
+      }
+      &__header {
+        margin-bottom: 60px;
+      }
+      &__message {
+        margin-bottom: 75px;
+      }
+    }
+
+    .page-links {
+      margin-top: 80px;
+      margin-bottom: 120px;
+
     }
   }
 }

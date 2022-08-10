@@ -413,6 +413,7 @@
     }
   }
 
+
   // single-news.html
   .single-news-page {
     & > * + * {
@@ -568,6 +569,33 @@
         padding-top: 20px;
         grid-area: mail;
       }
+
+  // 404.html
+  .page404 {
+    margin-top: 50px;
+    // error 404 banner
+    .error404 {
+      &__content {
+        padding: 50px 80px 50px 20px;
+      }
+      &__header {
+        margin-bottom: 30px;
+      }
+      &__message {
+        margin-bottom: 50px;
+      }
+      &__buttons {
+        display: flex;
+      }
+      &__btn {
+        flex-basis: 50%;
+      }
+    }
+
+    .page-links {
+      margin-top: 60px;
+      margin-bottom: 100px;
+
     }
   }
 }
