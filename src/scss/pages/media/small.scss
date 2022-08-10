@@ -385,4 +385,37 @@
       margin-top: 20px;
     }
   }
+
+  // 404.html
+  .page404 {
+    margin-top: 50px;
+    // error 404 banner
+    .error404 {
+      &__content {
+        padding: 50px 20px;
+      }
+      &__header {
+        margin-bottom: 30px;
+      }
+      &__message {
+        margin-bottom: 40px;
+      }
+      &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        & :first-child {
+          margin-right: 0px;
+          margin-bottom: 20px;
+        }
+      }
+      &__btn {
+        flex-basis: 100%;
+      }
+    }
+
+    .page-links {
+      margin-top: 60px;
+      margin-bottom: 100px;
+    }
+  }
 }

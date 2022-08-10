@@ -318,12 +318,6 @@
     }
   }
 
-  .bvz-links {
-    &__item:not(:first-child) {
-      margin-top: 10px;
-    }
-  }
-
   .slider {
     margin-bottom: 200px;
     &__header {
@@ -394,5 +388,33 @@
         background-color: $bgc-mobile;
       }
     }
+  }
+}
+
+// 404.html
+.page404 {  
+  // error 404 banner
+  margin-top: 130px;
+  .error404 {
+    &__content {
+      padding: 40px 600px 50px 50px;
+      background-color: $bgc-mobile;
+    }
+    &__header {
+      margin-bottom: 80px;
+    }
+    &__message {
+      margin-bottom: 65px;
+    }
+    &__buttons {
+      & :first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .page-links {
+    margin-top: 100px;
+    margin-bottom: 200px;
   }
 }
