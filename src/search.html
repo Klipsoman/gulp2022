@@ -4,16 +4,53 @@
   <body>
     @@include('html-templates/header.html')
     <!-- Page Inner -->
+    <div class="page-inner page-inner__search">
+      <div class="container">
+        <h1 class="page-header">Поиск</h1>
+      </div>
+    </div>
 
     <!-- search-page -->
     <div class="search-page">
-      <div class="container">
+      <!-- search -->
+      <div class="search">
+        <div class="container">
+          <div class="search__content">
+            <div class="search__left">
+              <input class="search__input" type="text" name="" id="" />
+              <button class="search__btn btn btn-grey">Поиск</button>
+            </div>
+            <div class="search__right">
+              <div class="page-links">
+                <div class="container">
+                  <ul class="page-links__list">
+                    <li class="page-links__item">
+                      <a
+                        href=""
+                        class="bvz-links__link page-links__link link link-arrow"
+                        >Вернуться на главную</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- search-result -->
+      <div class="search-result">
+        <div class="container">
+          <div class="search-result__query description-secondary">Результат поиска “gfytkn”</div>
+          <ul class="search-result__list">
+            <li class="search-result__item search-result__item--none description">По вашему запросу ничего не найдено</li>
 
+            <!-- search-item.html / in templates -->
+          </ul>
+        </div>
       </div>
     </div>
-   
- 
 
-    @@include('html-templates/footer.html')
+    @@include('html-templates/footer-small.html')
   </body>
 </html>

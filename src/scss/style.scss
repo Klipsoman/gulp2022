@@ -1,6 +1,6 @@
-@import './swiper/swiper.scss';
-@import './normalize/normalize.scss';
-@import './fonts/fonts.scss';
+@import "./swiper/swiper.scss";
+@import "./normalize/normalize.scss";
+@import "./fonts/fonts.scss";
 
 $font-size-header: 48px;
 $font-size-large: 24px;
@@ -27,7 +27,7 @@ $bgc-mobile: #f0f5fb;
 }
 
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: $font-size-normal;
   color: $color-normal;
   font-weight: normal;
@@ -82,6 +82,7 @@ ol {
 input,
 textarea {
   width: 100%;
+  padding: 12px 9px;
   border-radius: 0;
   -webkit-border-radius: 0px;
 }
@@ -127,7 +128,7 @@ textarea {
   position: relative;
   &::after {
     transition: ease 0.4s;
-    content: '';
+    content: "";
     position: absolute;
     right: -25px;
     width: 20px;
@@ -145,7 +146,7 @@ textarea {
   position: relative;
   &::after {
     transition: ease 0.4s;
-    content: '';
+    content: "";
     position: absolute;
     right: -25px;
     width: 20px;
@@ -163,7 +164,7 @@ textarea {
   position: relative;
   &::after {
     transition: ease 0.4s;
-    content: '';
+    content: "";
     position: absolute;
     right: -25px;
     width: 20px;
@@ -181,7 +182,7 @@ textarea {
   position: relative;
   &::after {
     transition: ease 0.4s;
-    content: '';
+    content: "";
     position: absolute;
     right: -25px;
     width: 20px;
@@ -191,7 +192,7 @@ textarea {
     background-repeat: no-repeat;
   }
   &:hover::after {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxNCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik05IDFMMTMgNUw5IDkiIHN0cm9rZT0iIzAwNDI4OSIvPg0KPHBhdGggZD0iTTEzIDVIMCIgc3Ryb2tlPSIjMDA0Mjg5Ii8+DQo8L3N2Zz4NCg==)
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxNCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik05IDFMMTMgNUw5IDkiIHN0cm9rZT0iIzAwNDI4OSIvPg0KPHBhdGggZD0iTTEzIDVIMCIgc3Ryb2tlPSIjMDA0Mjg5Ii8+DQo8L3N2Zz4NCg==);
   }
 }
 
@@ -199,19 +200,19 @@ textarea {
   color: $color-white;
   transition: ease 0.4s;
   &::after {
-    content: url('./assets/images/arrow-white.svg');
+    content: url("./assets/images/arrow-white.svg");
     position: absolute;
     margin-left: 8px;
   }
   &:hover::after {
-    opacity: .7;
+    opacity: 0.7;
   }
 }
 
 .link-border {
   position: relative;
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -260,16 +261,26 @@ textarea {
 
 // btn
 .btn {
+  display: inline-block;
   min-width: 170px;
   padding: 12px 5px;
   color: $color-white;
   font-size: 18px;
+  text-align: center;
 }
 .btn-gold {
   background-color: $color-gold;
+  &:hover {
+    background-color: $color-hover-light;
+    color: $color-black;
+  }
 }
 .btn-grey {
   background-color: $color-grey;
+  &:hover {
+    background-color: $color-hover-light;
+    color: $color-black;
+  }
 }
 
 .telephone {
@@ -435,7 +446,7 @@ textarea {
     font-size: 14px;
     transition: ease 0.4s;
     &::after {
-      content: '';
+      content: "";
       height: 1px;
       width: 0px;
       position: absolute;
@@ -449,7 +460,7 @@ textarea {
       color: $color-hover;
     }
     &:hover::after {
-      content: '';
+      content: "";
       height: 1px;
       width: 100%;
       position: absolute;
@@ -465,7 +476,7 @@ textarea {
     margin-left: 10px;
     top: 2.5px;
     &::after {
-      content: '';
+      content: "";
       height: 1px;
       width: 0px;
       position: absolute;
@@ -476,7 +487,7 @@ textarea {
       transition: ease 0.4s;
     }
     &:hover::after {
-      content: '';
+      content: "";
       height: 1px;
       width: 100%;
       position: absolute;
@@ -494,7 +505,7 @@ textarea {
     margin-left: 20px;
     font-size: 13px;
     &::after {
-      content: '';
+      content: "";
       height: 1px;
       width: 0px;
       position: absolute;
@@ -508,7 +519,7 @@ textarea {
       color: $color-hover;
     }
     &:hover::after {
-      content: '';
+      content: "";
       height: 1px;
       width: 100%;
       position: absolute;
@@ -563,7 +574,7 @@ textarea {
   margin-top: 30px;
   height: 1px;
   min-height: 550px;
-  background-image: url('./assets/images/inner-bg.jpg');
+  background-image: url("./assets/images/inner-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -575,11 +586,15 @@ textarea {
     top: 0;
     bottom: 0;
     width: 589px;
-    background: linear-gradient(162.65deg, rgb(0%, 26%, 54%, 0.9), rgb(0%, 21%, 43%, 0.9));
+    background: linear-gradient(
+      162.65deg,
+      rgb(0%, 26%, 54%, 0.9),
+      rgb(0%, 21%, 43%, 0.9)
+    );
     padding: 122px 50px 113px;
   }
   &__header {
-    font-family: 'PT Sans';
+    font-family: "PT Sans";
     font-style: normal;
     font-weight: normal;
     font-size: $font-size-header;
@@ -604,7 +619,7 @@ textarea {
 // Мы производим (Produce)
 .produce {
   padding-top: 150px;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   &__list {
     display: flex;
     justify-content: space-between;
@@ -717,7 +732,7 @@ textarea {
 // Секторы рынка (sector)
 
 .sector {
-  padding-top: 125px;
+  padding-top: 150px;
   padding-bottom: 100px;
   &__content {
     display: grid;
@@ -739,7 +754,7 @@ textarea {
     height: auto;
     object-fit: cover;
   }
-  &__image:not([data-visible='visible']) {
+  &__image:not([data-visible="visible"]) {
     position: absolute;
     left: -4000px;
     visibility: hidden;
@@ -767,7 +782,7 @@ textarea {
   &__link {
     position: relative;
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       right: -26px;
       width: 20px;
@@ -985,6 +1000,7 @@ textarea {
 
 .clients {
   padding: 100px 0;
+  padding-bottom: 200px;
   &__list {
     display: flex;
     justify-content: space-between;
@@ -1063,7 +1079,7 @@ textarea {
 .contacts {
   background-color: #f0f5fb;
   padding: 100px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   &__content {
     display: flex;
   }
@@ -1344,9 +1360,9 @@ textarea {
   }
 }
 
-@import './pages/style';
+@import "./pages/style";
 
-@import './media/big';
-@import './media/medium';
-@import './media/small';
-@import './media/other';
+@import "./media/big";
+@import "./media/medium";
+@import "./media/small";
+@import "./media/other";

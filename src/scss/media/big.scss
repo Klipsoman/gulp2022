@@ -53,7 +53,9 @@
     }
   }
 
+  // benefits
   .benefits {
+    padding-bottom: 60px;
     &__item {
       padding-top: 30px;
       padding-left: 30px;
@@ -119,7 +121,6 @@
   }
 
   // Reviews
-
   .reviews {
     padding-top: 60px;
     &__review {
@@ -168,6 +169,7 @@
 
   .clients {
     padding: 60px 0;
+    padding-bottom: 120px;
     &__list {
       display: flex;
       justify-content: space-between;

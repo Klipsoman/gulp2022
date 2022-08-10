@@ -288,6 +288,7 @@
     }
   }
 
+  // Benefits
   .benefits {
     padding-top: 30px;
 
@@ -412,6 +413,8 @@
 
   // Reviews
   .reviews {
+    padding-top: 45px;
+    padding-bottom: 30px;
     &__review {
       font-size: 16px;
     }
@@ -518,8 +521,10 @@
     }
   }
 
+  // Clients
   .clients {
     padding: 60px 0;
+    padding-bottom: 90px;
 
     &__list {
       display: grid;

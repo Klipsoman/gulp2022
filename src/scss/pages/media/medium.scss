@@ -413,7 +413,6 @@
     }
   }
 
-
   // single-news.html
   .single-news-page {
     & > * + * {
@@ -461,7 +460,7 @@
       padding-bottom: 0;
       &__link {
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           bottom: 0;
           left: 0;
@@ -552,8 +551,8 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-          'name tel'
-          'name mail';
+          "name tel"
+          "name mail";
       }
       &__item:first-child {
         border-top: 1px solid $color-normal;
@@ -569,6 +568,8 @@
         padding-top: 20px;
         grid-area: mail;
       }
+    }
+  }
 
   // 404.html
   .page404 {
@@ -595,7 +596,70 @@
     .page-links {
       margin-top: 60px;
       margin-bottom: 100px;
-
     }
   }
+
+  // privacy.html
+  .privacy-page {
+    // privacy
+    .privacy {
+      &__title:not(:first-child) {
+        margin-top: 60px;
+      }
+    }
+    // page-links
+    .page-links {
+      margin-top: 60px;
+      margin-bottom: 120px;
+    }
+  }
+
+  // search.html
+  .page-inner__search {
+    padding-bottom: 30px;
+  }
+
+  .search-page {
+    .search {
+      & .page-links {
+        &__link {
+          font-size: 16px;
+        }
+      }
+      &__content {
+        flex-wrap: wrap;
+      }
+      &__right {
+        order: -1;
+        margin-left: -20px;
+        margin-bottom: 30px;
+      }
+      &__left {
+        flex-basis: 100%;
+      }
+      &__input {
+        width: 100%;
+      }
+      &__btn {
+      }
+    }
+    // search-result
+    .search-result {
+      margin-top: 40px;
+      margin-bottom: 100px;
+      &__list {
+        margin-top: 20px;
+      }
+      &__item--none {
+        padding: 80px 0;
+      }
+      &__left {
+        margin-right: 62px;
+      }
+      &__title {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  // <-- media medium end -->
 }

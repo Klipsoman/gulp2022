@@ -317,7 +317,6 @@
     }
   }
 
-
   // single-news.html
   .single-news-page {
     & > * + * {
@@ -409,6 +408,8 @@
         flex-basis: auto;
         flex-grow: 1;
       }
+    }
+  }
 
   // 404.html
   .page404 {
@@ -429,7 +430,27 @@
     .page-links {
       margin-top: 80px;
       margin-bottom: 120px;
-
     }
   }
+
+  // privacy.html
+  .privacy-page {
+    // privacy
+    .privacy {
+      &__title:not(:first-child) {
+        margin-top: 80px;
+      }
+    }
+    // page-links
+    .page-links {
+      margin-bottom: 120px;
+    }
+  }
+
+  // search
+  .page-inner__search {
+    padding-bottom: 30px;
+  }
+
+  // <-- media big end -->
 }
