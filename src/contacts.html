@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html-templates/head.html')
+  <body>
+    @@include('html-templates/header.html')
+    <!-- Page Inner -->
+    @@include('html-templates/page-inner.html', { "header": "Контакты" })
+
+    <!-- contacts page -->
+    <div class="contacts-page">
+      
+      <div class="location location--blue" id="office">
+        <div class="container">
+          <div class="location__content">
+            <div class="location__left">
+              <h3 class="location__header section-header">Офис</h3>
+            </div>
+            <div class="location__center">
+              <div class="location__tel-box">
+                <a class="location__tel description" href="">+7 800 250-07-65</a>
+              </div>
+              <div class="location__tel-box">
+                <a class="location__tel description" href="">+7 812 602-29-40</a>
+              </div>
+              <div class="location__mail-box">
+                <a class="location__mail description" href="mailto:info@ruspan.su">info@ruspan.su</a>
+              </div>
+              <address class="location__address description-secondary">
+                196158, Россия, Санкт-Петербург, Пулковское шоссе, дом 28, литера А, офис 1403
+              </address>
+              <div class="location__social-box">
+                <a class="location__social description-secondary link-hl link-arrow-white" href="">Вконтакте</a>
+              </div>
+            </div>
+            <div class="location__right">
+              <div class="location__map">
+                <!--script created automatically-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      @@include('html-templates/factory.html', {
+        "id": "west-factory",
+        "header": "Завод на Северо-Западе",
+        "address": "188302, Ленинградская обл., д.&nbsp;Малые Колпаны Гатчинского&nbsp;района, ул.&nbsp;Кооперативная, д. 1а",
+        "coords": "Координаты: 59.543846, 30.059669",
+      })
+
+      @@include('html-templates/factory.html', {
+        "id": "east-factory",
+        "header": "Завод на Юге",
+        "address": " 357107, Невинномысск, ул.&nbsp;Низяева,  д. 1В",
+        "coords": "Координаты: 44.673693, 41.937103",
+      })
+
+      <div class="managers">
+        <div class="container">
+          <div class="managers__header description">Наши менеджеры</div>
+
+          <!-- Panels table -->
+          <div class="managers__table">
+            <div class="managers__table-title description-secondary description-secondary--black">
+              Сэндвич панели RUSPAN
+            </div>
+
+            <div class="managers__row">
+              <div class="managers__left">
+                <div class="managers__location description-secondary">Санкт-Петербург и&nbsp;Северо-Западный ФО</div>
+              </div>
+              <div class="managers__right">
+                @@loop('html-templates/managers-item.html', [
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                ])      
+              </div>
+            </div>
+
+            <div class="managers__row">
+              <div class="managers__left">
+                <div class="managers__location description-secondary">Москва и Центральный ФО, Уральский и Сибирский ФО, Калининград, Республика Беларусь, Казахстан, Узбекистан</div>
+              </div>
+              <div class="managers__right">
+                @@loop('html-templates/managers-item.html', [
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                ])      
+              </div>
+            </div>
+
+            <div class="managers__row">
+              <div class="managers__left">
+                <div class="managers__location description-secondary">Южный и Северо-Кавказский ФО</div>
+              </div>
+              <div class="managers__right">
+                @@loop('html-templates/managers-item.html', [
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                ])      
+              </div>
+            </div>
+
+          </div>
+
+          <div class="managers__table">
+            <div class="managers__table-title description-secondary description-secondary--black">
+              Сэндвич панели RUSPAN
+            </div>
+
+            <div class="managers__row">
+              <div class="managers__left">
+                <div class="managers__location description-secondary">Санкт-Петербург и&nbsp;Северо-Западный ФО</div>
+              </div>
+              <div class="managers__right">
+                @@loop('html-templates/managers-item.html', [
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                ])      
+              </div>
+            </div>
+
+            <div class="managers__row">
+              <div class="managers__left">
+                <div class="managers__location description-secondary">Москва и Центральный ФО, Уральский и Сибирский ФО, Калининград, Республика Беларусь, Казахстан, Узбекистан</div>
+              </div>
+              <div class="managers__right">
+                @@loop('html-templates/managers-item.html', [
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                ])      
+              </div>
+            </div>
+
+            <div class="managers__row">
+              <div class="managers__left">
+                <div class="managers__location description-secondary">Южный и Северо-Кавказский ФО</div>
+              </div>
+              <div class="managers__right">
+                @@loop('html-templates/managers-item.html', [
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                { "name": "Ольга Тюрина", "tel": "Тел: +7 (921) 950-89-23", "mail": "olga.tyurina@ruspan.su" },
+                ])      
+              </div>
+            </div>
+
+          </div>
+
+          
+        </div>
+      </div>
+      
+    </div>
+
+    @@include('html-templates/footer.html')
+  </body>
+</html>

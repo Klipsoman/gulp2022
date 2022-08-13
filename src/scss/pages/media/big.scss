@@ -363,8 +363,8 @@
     }
   }
 
-  // About.html page
-  .about-page {
+  // contacts.html page
+  .contacts-page {
     & > * + * {
       margin-top: 100px;
     }
@@ -450,6 +450,87 @@
   // search
   .page-inner__search {
     padding-bottom: 30px;
+  }
+
+  // about.html
+  .about-page {
+    // inner
+    .about-inner {
+      margin-bottom: 101px;
+      &__left {
+        padding-right: 27px;
+      }
+      &__right {
+      }
+    }
+    // stats
+    .stats {
+      margin-bottom: 60px;
+    }
+    // more-about
+    .more-about {
+      margin-bottom: 80px;
+      &__left {
+        padding-right: 36px;
+      }
+      &__right {
+        padding-right: 36px;
+      }
+      &__descr {
+        margin-top: 20px;
+      }
+      &__link {
+        margin-top: 20px;
+      }
+    }
+    // mission
+    .mission {
+      padding: 80px 0;
+      &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 103px;
+      }
+      &__right {
+        padding-left: 8px;
+        padding-right: 0px;
+      }
+      &__header {
+        color: $color-white;
+        margin-bottom: 118px;
+      }
+      &__descr {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #255f9d;
+      }
+      &__part:nth-child(2) p:last-child {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        border-bottom: none;
+      }
+    }
+    // values
+    .values {
+      margin-bottom: 100px;
+      padding: 80px 0;
+      &__header {
+        margin-bottom: 40px;
+      }
+      &__item {
+        flex-basis: 33.333%;
+        padding-right: 30px;
+      }
+    }
+    // benefits
+    .benefits {
+      padding-bottom: 60px;
+    }
+
+    .page-links {
+      margin-bottom: 100px;
+    }
   }
 
   // <-- media big end -->
