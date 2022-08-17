@@ -86,6 +86,17 @@
     }
   }
 
+  // slider-sandwich-panels
+  .slider-sandwich-panels.slider {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    & .projects__keys {
+      padding-top: 0;
+      margin-top: -50px;
+      justify-content: center;
+    }
+  }
+
   // Pages css:
 
   // designing-technical-support.html
@@ -316,11 +327,6 @@
     .slider {
       margin-bottom: 120px;
       margin-top: 45px;
-      & .projects__keys {
-        padding-top: 0;
-        margin-top: -50px;
-        justify-content: center;
-      }
     }
   }
 
@@ -541,22 +547,87 @@
   }
 
   // product-page.html
-.product-page {
-  // product
-  .product {
-    &__right {
-      padding-left: 147px;
+  .product-page {
+    // product
+    .product {
+      margin-bottom: 60px;
+      &__right {
+        padding-left: 147px;
+      }
+      &__left {
+        padding-right: 0px;
+      }
+      &__laptop {
+        .product__characteristic {
+          display: none;
+        }
+        .product__btn {
+          display: none;
+        }
+      }
     }
-    &__left {
-      padding-right: 0px;
+    // catalog
+    .catalog {
+      margin-bottom: 100px;
     }
 
-  }
+    // components
+    .components {
+      margin-bottom: 100px;
+      &__content {
+        grid-gap: 15px;
+      }
+      &__item {
+        padding: 30px;
+      }
+      &__item:first-child {
+        & .components__descr {
+          padding-right: 0px;
+        }
+      }
+      &__item:nth-child(2) {
+        & .components__descr {
+          padding-right: 0px;
+        }
+      }
+      &__title {
+        margin-bottom: 30px;
+      }
+      &__descr {
+        margin-bottom: 40px;
+        padding-right: 0px;
+      }
+    }
+    // use-areas
+    .use-areas {
+      margin-bottom: 100px;
+      &__right {
+        padding-left: 86px;
+        & .swiper-slide__image-box img {
+          display: block;
+          margin-left: auto;
+        }
+      }
+      &__descr {
+        margin-top: 30px;
+      }
+      &__top {
+        padding-bottom: 55px;
+      }
+      &__bottom {
+        padding-top: 20px;
+      }
+      & .page-links__list {
+        & .page-links__item {
+          margin-top: 14px;
+        }
+      }
+    }
 
-  .catalog {
-    margin-bottom: 150px;
+    .slider-sandwich-panels {
+      margin-bottom: 120px;
+    }
   }
-}
 
   // <-- media big end -->
 }

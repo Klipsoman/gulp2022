@@ -116,6 +116,13 @@
     }
   }
 
+  // product-characteristic
+  .product-characteristic {
+    &__row {
+      grid-template-columns: auto;
+    }
+  }
+
   // Slider
   .swiper {
     & .projects__info {
@@ -133,6 +140,12 @@
         font-size: 16px;
       }
     }
+  }
+
+  // slider-sandwich-panels
+  .slider-sandwich-panels.slider {
+    margin-bottom: 0px;
+    margin-top: 0px;
   }
 
   // Pages css:
@@ -878,5 +891,117 @@
     }
   }
 
+  // product-page.html
+  .product-page {
+    // product
+    .product {
+      margin-bottom: 60px;
+      &__right {
+        flex-basis: 100%;
+        order: -1;
+        flex-grow: 1;
+        margin-bottom: 60px;
+        padding-left: 0px;
+      }
+      &__left {
+        flex-basis: 100%;
+        padding-right: 0px;
+      }
+      &__title {
+        margin-bottom: 20px;
+      }
+      &__descr {
+        margin-bottom: 0px;
+      }
+      &__characteristic {
+        display: none;
+      }
+      &__btn {
+        display: none;
+      }
+      &__laptop {
+        flex-basis: 100%;
+        margin-top: 60px;
+        .product__characteristic {
+          display: block;
+        }
+        .product__btn {
+          margin-top: 40px;
+          width: 100%;
+          display: inline-block;
+        }
+      }
+    }
+    // catalog
+    .catalog {
+      margin-bottom: 60px;
+    }
+    // components
+    .components {
+      margin-bottom: 60px;
+      &__content {
+        grid-gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      &__item {
+        padding: 20px;
+      }
+      &__item:first-child {
+        & .components__descr {
+          padding-right: 0px;
+        }
+      }
+      &__item:nth-child(2) {
+        & .components__descr {
+          padding-right: 0px;
+        }
+      }
+      &__title {
+        margin-bottom: 10px;
+      }
+      &__descr {
+        margin-bottom: 20px;
+        padding-right: 0px;
+      }
+    }
+    // use-areas
+    .use-areas {
+      margin-bottom: 60px;
+      &__descr {
+        margin-top: 20px;
+      }
+      &__content {
+        flex-wrap: wrap;
+      }
+      &__left {
+        flex-basis: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &__right {
+        width: 100%;
+        margin-top: 30px;
+        padding-left: 0;
+      }
+      &__top {
+        flex-basis: 100%;
+        padding-bottom: 20px;
+        padding-right: 0px;
+      }
+      &__bottom {
+        flex-basis: 100%;
+        padding-top: 0px;
+      }
+      & .page-links__list {
+        & .page-links__item {
+          flex-basis: 100%;
+          margin-top: 20px;
+        }
+      }
+    }
+    .slider-sandwich-panels {
+      margin-bottom: 80px;
+    }
+  }
   // <-- media small end -->
 }

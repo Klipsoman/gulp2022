@@ -42,6 +42,21 @@
                 <img src="./assets/images/product-image.jpg" alt="" class="product__image">
               </div>
             </div>
+            <div class="product__laptop">
+              <div class="product__characteristic product-characteristic">
+
+                @@include('html-templates/product-characteristic-row.html', { "key": "Тип", "value": "Стеновые панели" })
+                @@include('html-templates/product-characteristic-row.html', { "key": "Материал", "value": "Минеральная вата" })
+                @@include('html-templates/product-characteristic-row.html', { "key": "Ширина", "value": "1090 мм" })
+                @@include('html-templates/product-characteristic-row.html', { "key": "Толщина", "value": "80/100/120/150/175/200/250 мм" })
+                @@include('html-templates/product-characteristic-row.html', { "key": "Класс пожарной безопасности", "value": "К0 (не горючий материал)" })
+                @@include('html-templates/product-characteristic-row.html', { "key": "Тип замка ", "value": "Secret Fix" })
+                @@include('html-templates/product-characteristic-row.html', { "key": "Тип стыка", "value": "«Лабиринт» и прямой" })
+
+              </div>
+              
+              <button class="product__btn btn btn-gold">Узнать стоимость</button>
+            </div>
           </div>
         </div>
       </div>
@@ -61,7 +76,78 @@
           </div>
         </div>
       </div>
+
+      <!-- components -->
+
+      <div class="components">
+        <div class="container">
+          <div class="components__content">
+
+            @@include('html-templates/components-item.html', {
+              "title": "Замок Secret Fix",
+              "descr": "Использование замкового соединения Secret Fix при вертикальной ориентации сэндвич-панелей позволяет скрыть все монтажные элементы внутри замка, и сделать внешний вид фасада здания более эстетичным и целостным.",
+              "image": "./assets/images/components1.jpg"
+            })
+            @@include('html-templates/components-item.html', {
+              "title": "Метод стыковки «Лабиринт»",
+              "descr": "Использование стыковки панелей методом «Лабиринт» (шип-паз) сокращает теплопотери здания на 5%. Вы можете опционально выбрать данный вариант исполнения при спецификации заказа.",
+              "image": "./assets/images/components2.jpg"
+            })
+            @@include('html-templates/components-item.html', {
+              "title": "Метод стыковки прямой",
+              "descr": "Классический метод стыковки панелей, геометрия которого полностью отвечает требованиям ГОСТ в части обеспечения теплоизоляции.",
+              "image": "./assets/images/components3.jpg"
+            })
+
+           
+          </div>
+        </div>
+      </div>
+
+      <!-- Use area -->
+      <div class="use-areas">
+        <div class="container">
+          <div class="use-areas__content">
+            <div class="use-areas__left">
+              <div class="use-areas__top">
+                <h3 class="use-areas__title description">Сферы применения</h3>
+                <p class="use-areas__descr description-secondary">Стеновые панели серии FH предназначены для наружной обшивки любых типов зданий, кроме строений с низкой внутренней температурой (ниже 0°С). Их можно располагать на стенах и потолках строения как вертикально, так и горизонтально. Высокие теплотехнические характеристики делают стеновые панели Kingspan оптимальным выбором для использования в строительных проектах любой сложности и назначения.</p>
+              </div>
+              <div class="use-areas__bottom">
+
+                <div class="page-links">
+                    <ul class="page-links__list">
+                      <li class="page-links__item">
+                        <a href="" class="bvz-links__link page-links__link link link-arrow">Торговые здания</a>
+                      </li>
+                      <li class="page-links__item">
+                        <a href="" class="page-links__link link link-arrow">Спортивные сооружения</a>
+                      </li>
+                      <li class="page-links__item">
+                        <a href="" class="page-links__link link link-arrow">Производственные здания</a>
+                      </li>
+                      <li class="page-links__item">
+                        <a href="" class="page-links__link link link-arrow">Логистические здания и склады</a>
+                      </li>
+                    </ul>
+                </div>
+
+              </div>
+            </div>
+            <div class="use-areas__right">
+              <div class="use-areas__slider">
+                @@include('html-templates/slider-use-areas.html', { "id": "slider-use-areas" })
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+       <!-- Slider -->
+       @@include('html-templates/slider-sandwich-panels.html', { "id": "product-page__swiper"})
     </div>
+
     @@include('html-templates/footer.html')
   </body>
 </html>
