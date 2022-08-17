@@ -3,7 +3,7 @@
 
   // swiper-slide
   .swiper-slide {
-    &__info {
+    & .projects__info {
       bottom: 6px;
     }
   }
@@ -14,7 +14,7 @@
 
   // swiper-slide
   .swiper-slide {
-    &__info {
+    & .projects__info {
       bottom: 5px;
     }
   }
@@ -25,7 +25,13 @@
 
   // swiper-slide
   .swiper-slide {
-    &__info {
+    & .projects__info {
+      bottom: 4px;
+    }
+  }
+  
+  .swiper-slide {
+    & .projects__info {
       bottom: 4px;
     }
   }

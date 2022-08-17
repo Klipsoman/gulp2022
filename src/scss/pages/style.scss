@@ -71,6 +71,13 @@
   }
 }
 
+// product-page-inner
+.product-page-inner {
+  &__tags {
+    margin-top: 20px;
+  }
+}
+
 // subscribe
 .subscribe {
   &__content {
@@ -164,6 +171,61 @@
   &__map {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
+  }
+}
+
+// catalog
+.catalog {
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 19px;
+    padding-bottom: 15px;
+    border-top: 1px solid $color-normal;
+    border-bottom: 1px solid $color-normal;
+    font-size: 18px;
+    line-height: 140%;
+  }
+  &__link {
+    color: $color-hover;
+  }
+  &__download-box {
+    min-width: 95px;
+  }
+  &__download-link {
+    position: relative;
+    padding-right: 27px;
+    color: $color-header;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 100%;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAyMiAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIyIiBoZWlnaHQ9IjE5IiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEwLjc1IDBDMTEuMTY0MiAwIDExLjUgMC4zMzU3ODYgMTEuNSAwLjc1VjEwLjI5NTVMMTQuNjkyNSA2Ljc0ODI4QzE0Ljk2OTYgNi40NDA0IDE1LjQ0MzggNi40MTU0NCAxNS43NTE3IDYuNjkyNTRDMTYuMDU5NiA2Ljk2OTYzIDE2LjA4NDYgNy40NDM4NSAxNS44MDc1IDcuNzUxNzNMMTEuMzA3NSAxMi43NTE3QzExLjI4NTkgMTIuNzc1NyAxMS4yNjMgMTIuNzk4MSAxMS4yMzg5IDEyLjgxODhDMTEuMTEyOCAxMi45MjczIDEwLjk1MDIgMTIuOTk0NSAxMC43NzIgMTIuOTk5N0MxMC43Njg0IDEyLjk5OTggMTAuNzY0NyAxMi45OTk5IDEwLjc2MTEgMTIuOTk5OUMxMC43NTc0IDEzIDEwLjc1MzcgMTMgMTAuNzUgMTNDMTAuNzQyNiAxMyAxMC43MzUzIDEyLjk5OTkgMTAuNzI4IDEyLjk5OTdDMTAuNTQwMyAxMi45OTQzIDEwLjM3IDEyLjkyIDEwLjI0MTMgMTIuODAxMkMxMC4yMjM1IDEyLjc4NDcgMTAuMjA2NSAxMi43NjczIDEwLjE5MDMgMTIuNzQ5Mkw1LjY5MjU0IDcuNzUxNzNDNS40MTU0NCA3LjQ0Mzg1IDUuNDQwNCA2Ljk2OTYzIDUuNzQ4MjggNi42OTI1NEM2LjA1NjE3IDYuNDE1NDQgNi41MzAzOCA2LjQ0MDQgNi44MDc0OCA2Ljc0ODI4TDEwIDEwLjI5NTVWMC43NUMxMCAwLjMzNTc4NiAxMC4zMzU4IDAgMTAuNzUgMFpNMS41IDEwLjc1QzEuNSAxMC4zMzU4IDEuMTY0MjEgMTAgMC43NSAxMEMwLjMzNTc4NiAxMCAwIDEwLjMzNTggMCAxMC43NVYxNy4yNUMwIDE3LjY2NDIgMC4zMzU3ODYgMTggMC43NSAxOEgyMC43NUMyMS4xNjQyIDE4IDIxLjUgMTcuNjY0MiAyMS41IDE3LjI1VjEwLjc1QzIxLjUgMTAuMzM1OCAyMS4xNjQyIDEwIDIwLjc1IDEwQzIwLjMzNTggMTAgMjAgMTAuMzM1OCAyMCAxMC43NVYxNi41SDEuNVYxMC43NVoiIGZpbGw9IiMyMzIzMjMiLz4KPC9zdmc+Cg==");
+      background-position: center;
+      background-repeat: no-repeat;
+      right: -8px;
+    }
+  }
+}
+
+// product-characteristic
+.product-characteristic {
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 3px;
+    border-bottom: 1px solid $color-border;
+  }
+  &__row:not(:first-child) {
+    padding-top: 12px;
+  }
+  &__key {
+    color: $color-additional;
+  }
+  &__value {
+    color: $color-normal;
   }
 }
 
@@ -412,25 +474,25 @@
     }
   }
 
-  .catalog {
-    &__body {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 19px;
-      padding-bottom: 15px;
-      border-top: 1px solid $color-normal;
-      border-bottom: 1px solid $color-normal;
-      font-size: 18px;
-      line-height: 140%;
-    }
-    &__link {
-      color: $color-hover;
-    }
-    &__download-link {
-      color: $color-header;
-    }
-  }
+  // .catalog {
+  //   &__body {
+  //     display: flex;
+  //     justify-content: space-between;
+  //     align-items: center;
+  //     padding-top: 19px;
+  //     padding-bottom: 15px;
+  //     border-top: 1px solid $color-normal;
+  //     border-bottom: 1px solid $color-normal;
+  //     font-size: 18px;
+  //     line-height: 140%;
+  //   }
+  //   &__link {
+  //     color: $color-hover;
+  //   }
+  //   &__download-link {
+  //     color: $color-header;
+  //   }
+  // }
 
   .slider {
     margin-bottom: 200px;
@@ -710,6 +772,7 @@
 .page-inner__search {
   padding-bottom: 30px;
 }
+
 .search-page {
   // search
   .search {
@@ -909,5 +972,40 @@
   // page-links
   .page-links {
     margin-bottom: 200px;
+  }
+}
+
+// product-page.html
+.product-page {
+  // product
+  .product {
+    margin-bottom: 100px;
+    &__content {
+      display: flex;
+    }
+    &__left {
+      flex-basis: 50%;
+      padding-right: 11px;
+    }
+    &__right {
+      flex-basis: 50%;
+      padding-left: 214px;
+    }
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__descr {
+      margin-bottom: 50px;
+    }
+    &__characteristic {
+      margin-bottom: 30px;
+    }
+    &__btn {
+      padding: 22px 33px;
+    }
+  }
+
+  .catalog {
+    margin-bottom: 150px;
   }
 }

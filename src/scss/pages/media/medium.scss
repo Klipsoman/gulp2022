@@ -101,6 +101,14 @@
     }
   }
 
+  // catalog
+  .catalog {
+    &__body {
+      font-size: 16px;
+      line-height: 135%;
+    }
+  }
+
   // Slider
   .swiper {
     .projects__info {
@@ -364,12 +372,12 @@
       }
     }
 
-    .catalog {
-      &__body {
-        font-size: 16px;
-        line-height: 135%;
-      }
-    }
+    // .catalog {
+    //   &__body {
+    //     font-size: 16px;
+    //     line-height: 135%;
+    //   }
+    // }
 
     .bvz-links {
       &__item:not(:first-child) {
