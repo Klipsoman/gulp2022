@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html-templates/head.html')
+  <body>
+    @@include('html-templates/header.html')
+
+    <!-- Page Inner -->
+    @@include('html-templates/page-inner.html', {
+      "header": "Гипермаркет Spar"
+    })
+
+    <!-- project-page -->
+    <div class="project-page">
+
+      
+      
+      <!-- Slider -->
+      @@include('html-templates/slider.html', { "id": "project-page__swiper", "header": "Другие проекты"})
+    </div>
+
+
+    @@include('html-templates/footer.html')
+  </body>
+</html>

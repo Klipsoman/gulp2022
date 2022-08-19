@@ -1,4 +1,4 @@
-@import "./common.scss";
+@import './common.scss';
 // Pages css:
 
 // designing-technical-support.html
@@ -355,10 +355,12 @@
     &__header,
     &__tel,
     &__mail,
-    &__address,
-    &__social {
+    &__address {
       font-style: normal;
       color: $color-white;
+    }
+    &__mail:hover {
+      color: #B5C4D4;
     }
     &__content {
       display: flex;
@@ -430,8 +432,12 @@
       padding-top: 0;
     }
     &__mail {
-      text-decoration: underline;
       color: $color-hover;
+      &:hover {
+        @media (hover: hover) {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
@@ -808,5 +814,16 @@
 
   .slider-sandwich-panels {
     margin-bottom: 200px;
+  }
+}
+
+// project-page.html
+.project-page {
+  // slider
+  .slider {
+    margin-bottom: 200px;
+    &__header {
+      margin-bottom: 48px;
+    }
   }
 }

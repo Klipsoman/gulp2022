@@ -1,4 +1,10 @@
 @media (min-width: 1000px) and (max-width: 1399px) {
+  // LINKS
+  .link-fz-standart {
+    font-size: 16px;
+    line-height: 135%;
+  }
+
   // main styles
   p {
     font-size: 18px;
@@ -250,6 +256,17 @@
       }
     }
   }
+
+  // project-page.html
+  .project-page {
+    // slider
+    .slider {
+      margin-bottom: 100px;
+      &__header {
+        margin-bottom: 40px;
+      }
+    }
+  }
 }
 
-@import "../pages/media/big.scss";
+@import '../pages/media/big.scss';

@@ -1,4 +1,10 @@
 @media (min-width: 320px) and (max-width: 639px) {
+  // LINKS
+  .link-fz-standart {
+    font-size: 16px;
+    line-height: 135%;
+  }
+
   p {
     font-size: 16px;
   }
@@ -56,7 +62,7 @@
         top: auto;
 
         &::after {
-          content: "";
+          content: '';
           position: absolute;
           height: 1px;
           left: -15px;
@@ -95,7 +101,7 @@
         height: 159px;
 
         &::after {
-          content: "";
+          content: '';
           position: absolute;
           height: 1px;
           left: 10px;
@@ -177,7 +183,7 @@
         }
 
         & > li.hasSubmenu::after {
-          content: url("../../assets/images/arrow-menu.svg");
+          content: url('../../assets/images/arrow-menu.svg');
           position: absolute;
           top: 15px;
           right: 20px;
@@ -185,7 +191,7 @@
         }
 
         & > li.hasSubmenu.submenu-active::after {
-          content: url("../../assets/images/arrow-menu.svg");
+          content: url('../../assets/images/arrow-menu.svg');
           transform: rotateZ(360deg);
         }
 
@@ -676,10 +682,10 @@
       padding-bottom: 0px;
       grid-template-columns: repeat(1, 1fr);
       grid-template-areas:
-        "PRIVACY"
-        "COOKIE"
-        "RIGHTS"
-        "LOGO";
+        'PRIVACY'
+        'COOKIE'
+        'RIGHTS'
+        'LOGO';
       margin-top: 0;
 
       & > *:not(:first-child) {
@@ -742,4 +748,4 @@
   }
 }
 
-@import "../pages/media/small.scss";
+@import '../pages/media/small.scss';

@@ -1003,5 +1003,16 @@
       margin-bottom: 80px;
     }
   }
+
+    // project-page.html
+    .project-page {
+      // slider
+      .slider {
+        margin-bottom: 100px;
+        &__header {
+          margin-bottom: 30px;
+        }
+      }
+    }
   // <-- media small end -->
 }

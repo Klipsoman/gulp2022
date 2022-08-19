@@ -1,6 +1,6 @@
-@import "./swiper/swiper.scss";
-@import "./normalize/normalize.scss";
-@import "./fonts/fonts.scss";
+@import './swiper/swiper.scss';
+@import './normalize/normalize.scss';
+@import './fonts/fonts.scss';
 
 $font-size-header: 48px;
 $font-size-large: 24px;
@@ -27,7 +27,7 @@ $bgc-mobile: #f0f5fb;
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: $font-size-normal;
   color: $color-normal;
   font-weight: normal;
@@ -105,6 +105,93 @@ textarea {
   font-size: $font-size-header;
 }
 
+// LINKS by background color
+.link-fz-standart {
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 400;
+}
+// if background blue
+.link-bg-blue {
+  cursor: pointer;
+  color: #ffffff;
+  &:hover {
+    color: #b5c4d4;
+  }
+}
+.link-bg-blue--arrow {
+  position: relative;
+  &::after {
+    transition: ease 0.4s;
+    content: '';
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-46%);
+    width: 20px;
+    height: 100%;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxNCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik05IDFMMTMgNUw5IDkiIHN0cm9rZT0id2hpdGUiLz4NCjxwYXRoIGQ9Ik0xMyA1SDAiIHN0cm9rZT0id2hpdGUiLz4NCjwvc3ZnPg0K');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &:hover::after {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxNCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi4yOTI5IDUuMDAwMDRMOC42NDY0OCAxLjM1MzU5TDkuMzUzNTkgMC42NDY0ODRMMTMuNzA3MSA1LjAwMDA0TDkuMzUzNTkgOS4zNTM1OUw4LjY0NjQ4IDguNjQ2NDhMMTIuMjkyOSA1LjAwMDA0WiIgZmlsbD0iI0I1QzRENSIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNC41SDEzVjUuNUgwVjQuNVoiIGZpbGw9IiNCNUM0RDUiLz4KPC9zdmc+Cg==');
+  }
+}
+// if background white
+.link-bg-white {
+  cursor: pointer;
+  color: #585858;
+  &:hover {
+    color: #004289;
+  }
+}
+.link-bg-white--arrow {
+  position: relative;
+  &::after {
+    transition: ease 0.4s;
+    content: '';
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-46%);
+    width: 20px;
+    height: 100%;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxNCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTkgMUwxMyA1TDkgOSIgc3Ryb2tlPSIjNTg1ODU4Ii8+CjxwYXRoIGQ9Ik0xMyA1SDAiIHN0cm9rZT0iIzU4NTg1OCIvPgo8L3N2Zz4K');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &:hover::after {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxNCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTkgMUwxMyA1TDkgOSIgc3Ryb2tlPSIjMDA0Mjg5Ii8+CjxwYXRoIGQ9Ik0xMyA1SDAiIHN0cm9rZT0iIzAwNDI4OSIvPgo8L3N2Zz4K');
+  }
+}
+// if background gold
+.link-bg-gold {
+  cursor: pointer;
+  color: #ffffff;
+  &:hover {
+    color: #ece2d2;
+  }
+}
+.link-bg-gold--arrow {
+  position: relative;
+  &::after {
+    transition: ease 0.4s;
+    content: '';
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-46%);
+    width: 20px;
+    height: 100%;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxNCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik05IDFMMTMgNUw5IDkiIHN0cm9rZT0id2hpdGUiLz4NCjxwYXRoIGQ9Ik0xMyA1SDAiIHN0cm9rZT0id2hpdGUiLz4NCjwvc3ZnPg0K');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &:hover::after {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxNCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi4yOTI5IDUuMDAwMDRMOC42NDY0OCAxLjM1MzU5TDkuMzUzNTkgMC42NDY0ODRMMTMuNzA3MSA1LjAwMDA0TDkuMzUzNTkgOS4zNTM1OUw4LjY0NjQ4IDguNjQ2NDhMMTIuMjkyOSA1LjAwMDA0WiIgZmlsbD0iI0VDRTJEMiIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNC41SDEzVjUuNUgwVjQuNVoiIGZpbGw9IiNFQ0UyRDIiLz4KPC9zdmc+Cg==');
+  }
+}
 // link
 .link {
   &:hover {
@@ -128,7 +215,7 @@ textarea {
   position: relative;
   &::after {
     transition: ease 0.4s;
-    content: "";
+    content: '';
     position: absolute;
     right: -25px;
     width: 20px;
@@ -146,7 +233,7 @@ textarea {
   position: relative;
   &::after {
     transition: ease 0.4s;
-    content: "";
+    content: '';
     position: absolute;
     right: -25px;
     width: 20px;
@@ -164,7 +251,7 @@ textarea {
   position: relative;
   &::after {
     transition: ease 0.4s;
-    content: "";
+    content: '';
     position: absolute;
     right: -25px;
     width: 20px;
@@ -182,7 +269,7 @@ textarea {
   position: relative;
   &::after {
     transition: ease 0.4s;
-    content: "";
+    content: '';
     position: absolute;
     right: -25px;
     width: 20px;
@@ -200,7 +287,7 @@ textarea {
   color: $color-white;
   transition: ease 0.4s;
   &::after {
-    content: url("./assets/images/arrow-white.svg");
+    content: url('./assets/images/arrow-white.svg');
     position: absolute;
     margin-left: 8px;
   }
@@ -212,7 +299,7 @@ textarea {
 .link-border {
   position: relative;
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -450,7 +537,7 @@ textarea {
     font-size: 14px;
     transition: ease 0.4s;
     &::after {
-      content: "";
+      content: '';
       height: 1px;
       width: 0px;
       position: absolute;
@@ -464,7 +551,7 @@ textarea {
       color: $color-hover;
     }
     &:hover::after {
-      content: "";
+      content: '';
       height: 1px;
       width: 100%;
       position: absolute;
@@ -480,7 +567,7 @@ textarea {
     margin-left: 10px;
     top: 2.5px;
     &::after {
-      content: "";
+      content: '';
       height: 1px;
       width: 0px;
       position: absolute;
@@ -491,7 +578,7 @@ textarea {
       transition: ease 0.4s;
     }
     &:hover::after {
-      content: "";
+      content: '';
       height: 1px;
       width: 100%;
       position: absolute;
@@ -509,7 +596,7 @@ textarea {
     margin-left: 20px;
     font-size: 13px;
     &::after {
-      content: "";
+      content: '';
       height: 1px;
       width: 0px;
       position: absolute;
@@ -523,7 +610,7 @@ textarea {
       color: $color-hover;
     }
     &:hover::after {
-      content: "";
+      content: '';
       height: 1px;
       width: 100%;
       position: absolute;
@@ -578,7 +665,7 @@ textarea {
   margin-top: 30px;
   height: 1px;
   min-height: 550px;
-  background-image: url("./assets/images/inner-bg.jpg");
+  background-image: url('./assets/images/inner-bg.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -590,15 +677,11 @@ textarea {
     top: 0;
     bottom: 0;
     width: 589px;
-    background: linear-gradient(
-      162.65deg,
-      rgb(0%, 26%, 54%, 0.9),
-      rgb(0%, 21%, 43%, 0.9)
-    );
+    background: linear-gradient(162.65deg, rgb(0%, 26%, 54%, 0.9), rgb(0%, 21%, 43%, 0.9));
     padding: 122px 50px 113px;
   }
   &__header {
-    font-family: "PT Sans";
+    font-family: 'PT Sans';
     font-style: normal;
     font-weight: normal;
     font-size: $font-size-header;
@@ -758,7 +841,7 @@ textarea {
     height: auto;
     object-fit: cover;
   }
-  &__image:not([data-visible="visible"]) {
+  &__image:not([data-visible='visible']) {
     position: absolute;
     left: -4000px;
     visibility: hidden;
@@ -786,7 +869,7 @@ textarea {
   &__link {
     position: relative;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       right: -26px;
       width: 20px;
@@ -1083,7 +1166,7 @@ textarea {
 .contacts {
   background-color: #f0f5fb;
   padding: 100px;
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   &__content {
     display: flex;
   }
@@ -1364,9 +1447,9 @@ textarea {
   }
 }
 
-@import "./pages/style";
+@import './pages/style';
 
-@import "./media/big";
-@import "./media/medium";
-@import "./media/small";
-@import "./media/other";
+@import './media/big';
+@import './media/medium';
+@import './media/small';
+@import './media/other';

@@ -474,7 +474,7 @@
       padding-bottom: 0;
       &__link {
         &::before {
-          content: "";
+          content: '';
           position: absolute;
           bottom: 0;
           left: 0;
@@ -565,8 +565,8 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-          "name tel"
-          "name mail";
+          'name tel'
+          'name mail';
       }
       &__item:first-child {
         border-top: 1px solid $color-normal;
@@ -724,7 +724,7 @@
         order: 1;
         padding-bottom: 40px;
         &::before {
-          content: "";
+          content: '';
           position: absolute;
           bottom: 20px;
           left: 0;
@@ -740,7 +740,7 @@
       &__area:nth-child(3) {
         order: 2;
         &::before {
-          content: "";
+          content: '';
           position: absolute;
           bottom: 20px;
           left: 0;
@@ -960,6 +960,17 @@
 
     .slider-sandwich-panels {
       margin-bottom: 80px;
+    }
+  }
+
+  // project-page.html
+  .project-page {
+    // slider
+    .slider {
+      margin-bottom: 100px;
+      &__header {
+        margin-bottom: 50px;
+      }
     }
   }
 
