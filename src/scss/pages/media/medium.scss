@@ -474,7 +474,7 @@
       padding-bottom: 0;
       &__link {
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           bottom: 0;
           left: 0;
@@ -565,8 +565,8 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-          'name tel'
-          'name mail';
+          "name tel"
+          "name mail";
       }
       &__item:first-child {
         border-top: 1px solid $color-normal;
@@ -724,7 +724,7 @@
         order: 1;
         padding-bottom: 40px;
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           bottom: 20px;
           left: 0;
@@ -740,7 +740,7 @@
       &__area:nth-child(3) {
         order: 2;
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           bottom: 20px;
           left: 0;
@@ -965,6 +965,90 @@
 
   // project-page.html
   .project-page {
+    // project
+    .project {
+      min-height: auto;
+      height: auto;
+      margin-bottom: 80px;
+      &__content {
+        flex-wrap: wrap;
+      }
+      &__left {
+        flex-basis: 100%;
+      }
+      &__right {
+        flex-basis: 100%;
+        max-width: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+        padding-bottom: 38px;
+      }
+      &__row {
+        padding-bottom: 10px;
+        padding-top: 15px;
+      }
+      &__key {
+        font-size: 16px;
+      }
+      &__value {
+        font-size: 16px;
+      }
+    }
+    // about-project
+    .about-project {
+      margin-bottom: 100px;
+      &__header {
+        margin-bottom: 30px;
+      }
+      &__descr {
+        max-width: none;
+        margin-bottom: 40px;
+        font-size: 22px;
+      }
+      .slider {
+        margin-bottom: 40px;
+        .projects__arrows-btns {
+          margin: auto;
+        }
+      }
+      &__question {
+        padding-right: 22px;
+      }
+      &__answer {
+        padding-right: 0px;
+        padding-left: 22px;
+      }
+      &__result {
+        flex-wrap: wrap;
+        margin-top: 80px;
+        padding: 60px 20px;
+        & .about-project__title {
+          margin-bottom: 20px;
+        }
+      }
+      &__left {
+        flex-basis: 100%;
+        padding-right: 0px;
+      }
+      &__right {
+        flex-basis: 100%;
+        margin-top: 30px;
+      }
+      &__title {
+        margin-bottom: 20px;
+      }
+      &__video-box {
+        min-height: none;
+      }
+    }
+    // delivered-products
+    .delivered-products {
+      margin-bottom: 100px;
+      &__header {
+        margin-bottom: 30px;
+      }
+    }
     // slider
     .slider {
       margin-bottom: 100px;

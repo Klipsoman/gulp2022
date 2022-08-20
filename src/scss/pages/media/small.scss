@@ -1004,15 +1004,105 @@
     }
   }
 
-    // project-page.html
-    .project-page {
-      // slider
-      .slider {
-        margin-bottom: 100px;
-        &__header {
-          margin-bottom: 30px;
-        }
+  // project-page.html
+  .project-page {
+    // project
+    .project {
+      min-height: auto;
+      height: auto;
+      margin-bottom: 80px;
+      &__content {
+        flex-wrap: wrap;
+      }
+      &__left {
+        flex-basis: 100%;
+      }
+      &__right {
+        flex-basis: 100%;
+        max-width: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      &__row {
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+      &__key {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+      &__value {
+        font-size: 16px;
       }
     }
+    // about-project
+    .about-project {
+      margin-bottom: 80px;
+      &__header {
+        margin-bottom: 30px;
+      }
+      &__descr {
+        max-width: none;
+        margin-bottom: 40px;
+        font-size: 22px;
+        line-height: 120%;
+      }
+      .slider {
+        margin-bottom: 60px;
+        .projects__arrows-btns {
+          margin: auto;
+        }
+      }
+      &__question {
+        flex-basis: 100%;
+        padding-right: 0px;
+      }
+      &__answer {
+        flex-basis: 100%;
+        margin-top: 60px;
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+      &__result {
+        flex-wrap: wrap;
+        margin-top: 60px;
+        padding: 60px 10px;
+        & .about-project__title {
+          margin-bottom: 20px;
+        }
+      }
+      &__left {
+        flex-basis: 100%;
+        padding-right: 0px;
+      }
+      &__right {
+        flex-basis: 100%;
+        margin-top: 30px;
+      }
+      &__title {
+        margin-bottom: 20px;
+      }
+      &__video-box {
+        min-height: none;
+      }
+    }
+    // delivered-products
+    .delivered-products {
+      margin-bottom: 100px;
+      &__header {
+        margin-bottom: 30px;
+      }
+    }
+    // slider
+    .slider {
+      margin-bottom: 100px;
+      &__header {
+        margin-bottom: 30px;
+      }
+    }
+  }
   // <-- media small end -->
 }

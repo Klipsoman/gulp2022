@@ -5,19 +5,196 @@
     @@include('html-templates/header.html')
 
     <!-- Page Inner -->
-    @@include('html-templates/page-inner.html', {
-      "header": "Гипермаркет Spar"
+    @@include('html-templates/page-inner.html', { "header": "Гипермаркет Spar"
     })
 
     <!-- project-page -->
     <div class="project-page">
+      <!-- project -->
+      <div class="project">
+        <div class="project__content">
+          <div class="project__left">
+            <div class="project__image-box">
+              <img
+                src="./assets/images/project1.jpg"
+                alt=""
+                class="project__image"
+              />
+            </div>
+          </div>
 
-      
-      
+          <div class="project__right">
+            <div class="project__list">
+              <div class="project__row">
+                <div class="project__key">Год постройки</div>
+                <div class="project__value">2019</div>
+              </div>
+              <div class="project__row">
+                <div class="project__key">Название</div>
+                <div class="project__value">Гипермаркет Spar</div>
+              </div>
+              <div class="project__row">
+                <div class="project__key">Локация</div>
+                <div class="project__value">Ленинградская область</div>
+              </div>
+              <div class="project__row">
+                <div class="project__key">Поставленный продукт</div>
+                <div class="project__value">
+                  <a class="project__link" href=""
+                    >Стеновые сэндвич-панели FR</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- about-project -->
+
+      <div class="about-project">
+        <div class="container">
+          <h3 class="about-project__header page-title">Проект</h3>
+          <p class="about-project__descr description-secondary">Торговое здание выполненено выполнено из стеновых и кровельных сэндвич панелей Kingspan в Ленинградской области. В рамках проекта компания Кингспан поставила на объект стеновые и кровельные панели, профилированные листы, а также стальной оцинкованный каркаc. Вся продукция была произведена на заводе Кингспан в г Гатчина.</p>
+
+          @@include('html-templates/project-slider.html', { "id": "about-project__swiper" })
+
+          <div class="about-project__content">
+            <div class="about-project__question">
+              <div class="about-project__title description">В чем состояла задача?</div>
+              <div class="about-project__text description-secondary">Основная задача от заказчика заключалась в том, чтобы построить качественное и красивое здание для торговых процессов.</div>
+            </div>
+            <div class="about-project__answer">
+              <div class="about-project__title description">Решение</div>
+              <div class="about-project__text description-secondary">Для решения архитектурной задачи было выбрано использование стеновых сэндвич-панелей на основе минеральной ваты производства Кингспан. Отдельно были спроектированы и изготовлены индивидуальные стальные фасонные элементы, которые органично дополнили образ здания.</div>
+            </div>
+            <div class="about-project__result">
+              <div class="about-project__left">
+                <div class="about-project__title description">Какой результат?</div>
+                <div class="about-project__text description-secondary">Клиент остался доволен высоким качеством сэндвич-панелей&nbsp;Kingspan, а также 
+                  индивидуальным подходом к его проекту. Вся коммуникация относительно заказа была экспертной и оперативной. Благодаря высокой скорости поставки удалось обеспечить бесперебойное снабжение объекта стеновыми панелями, не сдвигая график монтажа.</div>
+              </div>
+              <div class="about-project__right">
+                <div class="about-project__video-box">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jU88mLuLWlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- delivered products -->
+
+      <div class="delivered-products">
+        <div class="container">
+          <div class="delivered-products__header page-title">Поставленные продукты</div>
+          <div class="delivered-products__list">
+
+            <div class="delivered-products__item delivered-card">
+              <div class="delivered-card__top">
+                <div class="delivered-card__info">
+                  <div class="delivered-card__title description">Сэндвич-панели FR</div>
+
+                  <div class="delivered-card__list description-secondary">
+                    <div class="delivered-card__item">
+                      <div class="delivered-card__key">Cердечник:</div>
+                      <div class="delivered-card__value">Мин. вата</div>
+                    </div>
+                    <div class="delivered-card__item">
+                      <div class="delivered-card__key">Ширина:</div>
+                      <div class="delivered-card__value">1000/1190/1200 мм</div>
+                    </div>
+                    <div class="delivered-card__item">
+                      <div class="delivered-card__key">Толщина:</div>
+                      <div class="delivered-card__value">от 50 до 200 мм.</div>
+                    </div>
+                    <div class="delivered-card__item">
+                      <div class="delivered-card__key">Тип замка:</div>
+                      <div class="delivered-card__value">Standard</div>
+                    </div>
+                    <div class="delivered-card__item">
+                      <div class="delivered-card__key">Соединение:</div>
+                      <div class="delivered-card__value">«Лабиринт» и прямой</div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="delivered-card__image-box">
+                  <img src="./assets/images/delivered1.jpg" alt="" class="delivered-card__image">
+                </div>
+              </div>
+              <div class="delivered-card__bottom">
+                <div class="delivered-card__left">
+                  <button class="delivered-card__btn btn-gold btn">Подробнее</button>
+                </div>
+                <div class="delivered-card__right">
+                  <div class="tags">
+                    <div class="tag tag-gold">Минеральная вата</div>
+                    <div class="tag tag-blue">Стеновые</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="delivered-products__item delivered-card">
+              <div class="delivered-card__top">
+                <div class="delivered-card__info">
+                  <div class="delivered-card__title description">Сэндвич-панели FR</div>
+
+                  <div class="delivered-card__list description-secondary">
+                    <div class="delivered-card__item">
+                      <div class="delivered-card__key">Cердечник:</div>
+                      <div class="delivered-card__value">Мин. вата</div>
+                    </div>
+                    <div class="delivered-card__item">
+                      <div class="delivered-card__key">Ширина:</div>
+                      <div class="delivered-card__value">1000/1190/1200 мм</div>
+                    </div>
+                    <div class="delivered-card__item">
+                      <div class="delivered-card__key">Толщина:</div>
+                      <div class="delivered-card__value">от 50 до 200 мм.</div>
+                    </div>
+                    <div class="delivered-card__item">
+                      <div class="delivered-card__key">Тип замка:</div>
+                      <div class="delivered-card__value">Standard</div>
+                    </div>
+                    <div class="delivered-card__item">
+                      <div class="delivered-card__key">Соединение:</div>
+                      <div class="delivered-card__value">«Лабиринт» и прямой</div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="delivered-card__image-box">
+                  <img src="./assets/images/delivered2.jpg" alt="" class="delivered-card__image">
+                </div>
+              </div>
+              <div class="delivered-card__bottom">
+                <div class="delivered-card__left">
+                  <button class="delivered-card__btn btn-gold btn">Подробнее</button>
+                </div>
+                <div class="delivered-card__right">
+                  <div class="tags">
+                    <div class="tag tag-gold">Минеральная вата</div>
+                    <div class="tag tag-blue">Стеновые</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Slider -->
-      @@include('html-templates/slider.html', { "id": "project-page__swiper", "header": "Другие проекты"})
+      @@include('html-templates/slider.html', {
+        "id": "project-page__swiper",
+        "header": "Другие проекты",
+        "btnprev": "project-swiper-button-prev",
+        "btnnext": "project-swiper-button-next"
+      })
     </div>
-
 
     @@include('html-templates/footer.html')
   </body>

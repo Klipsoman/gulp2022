@@ -629,5 +629,70 @@
     }
   }
 
+  // project-page.html
+  .project-page {
+    // project
+    .project {
+      min-height: 266px;
+      margin-bottom: 80px;
+      height: auto;
+      &__right {
+        max-width: 490px;
+        padding-left: 30px;
+      }
+      &__row {
+        padding-bottom: 8px;
+        padding-top: 11px;
+      }
+      &__key {
+        font-size: 16px;
+      }
+      &__value {
+        font-size: 16px;
+      }
+    }
+    // about-project
+    .about-project {
+      margin-bottom: 120px;
+      &__header {
+        margin-bottom: 45px;
+      }
+      &__descr {
+        max-width: 792px;
+        margin-bottom: 100px;
+        font-size: 24px;
+      }
+      .slider {
+        margin-bottom: 80px;
+        .projects__arrows-btns {
+          margin: auto;
+        }
+      }
+      &__question {
+        padding-right: 33px;
+      }
+      &__answer {
+        padding-right: 10px;
+      }
+      &__result {
+        margin-top: 100px;
+        padding: 50px;
+      }
+      &__left {
+        padding-right: 33px;
+      }
+      &__title {
+        margin-bottom: 30px;
+      }
+      &__video-box {
+        min-height: 237px;
+      }
+    }
+     // delivered-products 
+  .delivered-products {
+    margin-bottom: 120px;
+  }
+  }
+
   // <-- media big end -->
 }
