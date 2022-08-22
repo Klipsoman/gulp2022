@@ -1076,3 +1076,128 @@
     }
   }
 }
+
+// history-page.html
+.history-page {
+ 
+  .history-inner {
+    margin-bottom: 100px;
+    &__descr {
+      margin-top: 20px;
+    }
+  }
+  
+  .timeline-block {
+    margin-bottom: 150px;
+  }
+
+  // timeline
+  div.item {
+    display: flex;
+    flex: auto;
+    overflow-y: auto;
+    padding: 0rem;
+  }
+
+  .timeline {
+    position: relative;
+    display: table; //*For Firefox
+    height: 100%;
+    margin: {
+      left: auto;
+      right: auto;
+      top: 23px;
+    }
+    div {
+      &:after {
+        content: "";
+        width: 2px;
+        position: absolute;
+        top: -4px;
+        bottom: 0rem;
+        left: 60px;
+        z-index: 1;
+        background: #cacaca;
+      }
+    }
+    h3 {
+      position: absolute;
+      top: 0px;
+      left: -105px;
+      color: #c09a5d;
+      margin: 0;
+      font: {
+        size: 18px;
+        weight: 400;
+      }
+    }
+    section.year {
+      position: relative;
+      &:first-child section {
+        margin-top: -1.3em;
+        padding-bottom: 0px;
+      }
+      section {
+        position: relative;
+        padding-bottom: 1.25em;
+        margin-bottom: 109px;
+        h4 {
+          position: absolute;
+          bottom: 0;
+          font: {
+            size: 0.9em;
+            weight: 400;
+          }
+          line-height: 1.2em;
+          margin: 0;
+          padding: 0 0 0 89px;
+          color: #c5c5c5;
+        }
+        ul {
+          list-style-type: none;
+          padding: 0 0 0 125px;
+          margin: -1.35rem 0 1em;
+          max-width: 650px;
+          font-size: 1em;
+          &:last-child {
+            margin: {
+              bottom: 0;
+            }
+          }
+          &:first-of-type:after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: #FFF;
+            border: 2px solid #c09a5d;
+            border-radius: 50%;
+            position: absolute;
+            left: 49px;
+            top: 3px;
+            z-index: 2;
+          }
+          li {
+            margin-left: 0.5rem;
+            &:not(:first-child) {
+              margin-top: 0.5rem;
+            }
+            span.price {
+              color: mediumturquoise;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    & section.year:last-child {
+      & section {
+        margin-bottom: 22px;
+      }
+    }
+  }
+
+  // page-links 
+  .page-links {
+    margin-bottom: 200px;
+  }
+}

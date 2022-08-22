@@ -1204,5 +1204,29 @@
       }
     }
   }
+
+  // history-page
+  .history-page {
+    .history-inner {
+      margin-bottom: 80px;
+    }
+    // timeline
+    .timeline-block {
+      margin-bottom: 80px;
+    }
+    .timeline {
+      section.year {
+        section {
+          ul {
+            max-width: 390px;
+          }
+        }
+      }
+    }
+    // page-links
+    .page-links {
+      margin-bottom: 100px;
+    }
+  }
   // <-- media medium end -->
 }

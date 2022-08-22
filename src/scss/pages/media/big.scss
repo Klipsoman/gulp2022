@@ -762,5 +762,29 @@
     }
   }
 
+  // history-page
+  .history-page {
+    .history-inner {
+      margin-bottom: 135px;
+    }
+    // timeline
+    .timeline-block {
+      margin-bottom: 100px;
+    }
+    .timeline {
+      section.year {
+        section {
+          ul {
+            max-width: 470px;
+          }
+        }
+      }
+    }
+    // page-links
+    .page-links {
+      margin-bottom: 200px;
+    }
+  }
+
   // <-- media big end -->
 }

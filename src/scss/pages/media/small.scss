@@ -1239,5 +1239,38 @@
       margin-bottom: 100px;
     }
   }
+
+  // history-page
+  .history-page {
+    .history-inner {
+      margin-bottom: 80px;
+    }
+    // timeline
+    .timeline-block {
+      margin-bottom: 80px;
+    }
+    .timeline {
+      margin: {
+        left: 0;
+      }
+      h3 {
+        top: 5px;
+        left: 100px;
+        z-index: 4;
+      }
+      section.year {
+        section {
+          ul {
+            padding: 40px 0 0 90px;
+            max-width: initial;
+          }
+        }
+      }
+    }
+    // page-links
+    .page-links {
+      margin-bottom: 100px;
+    }
+  }
   // <-- media small end -->
 }
