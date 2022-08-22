@@ -136,8 +136,8 @@ export const initSliders = () => {
 
   const productPageSwiper = new Swiper("#product-page__swiper", {
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: "#sandwich-panels-swiper-button-next",
+      prevEl: "#sandwich-panels-swiper-button-prev",
     },
     slidesPerView: 4,
     slidesPerGroup: 4,
@@ -167,10 +167,10 @@ export const initSliders = () => {
   });
 
   const useAreasSlider = new Swiper("#slider-use-areas", {
-    // navigation: {
-    //   nextEl: ".swiper-button-next",
-    //   prevEl: ".swiper-button-prev",
-    // },
+    navigation: {
+      nextEl: "#use-areas-swiper-button-next",
+      prevEl: "#use-areas-swiper-button-prev",
+    },
     slidesPerView: 1,
     slidesPerGroup: 1,
     spaceBetween: 21,

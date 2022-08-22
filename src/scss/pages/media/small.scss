@@ -148,6 +148,44 @@
     margin-top: 0px;
   }
 
+  // delivered-card
+  .delivered-card {
+    padding: 0px;
+    &__top {
+      flex-wrap: wrap;
+    }
+    &__image-box {
+      margin-right: auto;
+      order: -1;
+    }
+    &__info {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    &__title {
+      margin-top: 10px;
+    }
+    &__list {
+      margin-top: 10px;
+    }
+    &__bottom {
+      flex-wrap: wrap;
+      margin-top: 20px;
+      padding: 20px;
+      padding-top: 0;
+    }
+    &__left {
+      margin-top: 12px;
+      width: 100%;
+    }
+    &__right {
+      order: -1;
+    }
+    &__btn {
+      width: 100%;
+    }
+  }
+
   // Pages css:
 
   // designing-technical-support.html
@@ -211,6 +249,10 @@
 
         &__list-laptop {
           display: none;
+        }
+
+        &__list-box {
+          padding-left: 0px;
         }
 
         &__item {
@@ -618,6 +660,12 @@
       }
       &__item > * + * {
         margin-top: 20px;
+      }
+      &__link {
+        display: unset;
+      }
+      &__name {
+        display: none;
       }
     }
   }
@@ -1096,11 +1144,94 @@
         margin-bottom: 30px;
       }
     }
+
+    .delivered-products__list {
+      grid-gap: 40px;
+      grid-template-columns: repeat(1, 1fr);
+    }
     // slider
     .slider {
       margin-bottom: 100px;
       &__header {
         margin-bottom: 30px;
+      }
+    }
+  }
+
+  // collaboration-page.html
+  .collaboration-page {
+    .collaboration {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      &__content {
+        flex-wrap: wrap;
+      }
+      &__left {
+        flex-basis: 100%;
+        padding-right: 0px;
+      }
+      &__right {
+        flex-basis: 100%;
+        margin-top: 30px;
+        padding-right: 0px;
+      }
+    }
+    // information
+    .information {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      &__content {
+        flex-wrap: wrap;
+      }
+      &__left {
+        flex-basis: 100%;
+        padding-right: 0px;
+      }
+      &__right {
+        margin-top: 30px;
+        flex-basis: 100%;
+      }
+      &__image {
+        width: 100%;
+        height: 100%;
+      }
+      &__descr:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    // info-lists
+    .info-lists {
+      &__content {
+        flex-wrap: wrap;
+      }
+      &__left {
+        flex-basis: 100%;
+        padding-right: 0;
+      }
+      &__right {
+        flex-basis: 100%;
+        margin-top: 60px;
+        padding-right: 0px;
+      }
+      &__list {
+        margin-top: 20px;
+      }
+    }
+    // descriptions
+    .descriptions {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      &__content {
+        flex-wrap: wrap;
+      }
+      &__left {
+        flex-basis: 100%;
+        padding-right: 0px;
+      }
+      &__right {
+        flex-basis: 100%;
+        margin-top: 60px;
+        padding-right: 0px;
       }
     }
   }

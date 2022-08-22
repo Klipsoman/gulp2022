@@ -134,6 +134,43 @@
     margin-top: 0px;
   }
 
+  .delivered-card {
+    padding: 0px;
+    &__top {
+      flex-wrap: wrap;
+    }
+    &__image-box {
+      margin-right: auto;
+      order: -1;
+    }
+    &__info {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    &__title {
+      margin-top: 10px;
+    }
+    &__list {
+      margin-top: 10px;
+    }
+    &__bottom {
+      flex-wrap: wrap;
+      margin-top: 20px;
+      padding: 20px;
+      padding-top: 0;
+    }
+    &__left {
+      margin-top: 12px;
+      width: 100%;
+    }
+    &__right {
+      order: -1;
+    }
+    &__btn {
+      width: 100%;
+    }
+  }
+
   // Pages css:
 
   // designing-technical-support.html
@@ -188,6 +225,10 @@
 
         &__list-laptop {
           display: block;
+        }
+
+        &__list-box {
+          padding-left: 0px;
         }
 
         &__item {
@@ -581,6 +622,12 @@
       &__mail-box {
         padding-top: 20px;
         grid-area: mail;
+      }
+      &__link {
+        display: unset;
+      }
+      &__name {
+        display: none;
       }
     }
   }
@@ -1049,6 +1096,7 @@
         margin-bottom: 30px;
       }
     }
+
     // slider
     .slider {
       margin-bottom: 100px;
@@ -1058,5 +1106,103 @@
     }
   }
 
+  // collaboration-page.html
+  .collaboration-page {
+    .collaboration {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      &__content {
+        flex-wrap: wrap;
+      }
+      &__left {
+        flex-basis: 100%;
+        padding-right: 0px;
+      }
+      &__right {
+        flex-basis: 100%;
+        margin-top: 30px;
+        padding-right: 0px;
+      }
+    }
+    // information
+    .information {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      &__content {
+        flex-wrap: wrap;
+      }
+      &__left {
+        flex-basis: 100%;
+        padding-right: 0px;
+      }
+      &__right {
+        margin-top: 20px;
+        flex-basis: 100%;
+      }
+      &__image {
+        width: 100%;
+        height: 100%;
+      }
+      &__descr:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+    // info-lists
+    .info-lists {
+      &__content {
+        flex-wrap: wrap;
+      }
+      &__left {
+        flex-basis: 100%;
+        padding-right: 0;
+      }
+      &__right {
+        flex-basis: 100%;
+        margin-top: 80px;
+        padding-right: 0px;
+      }
+      &__list {
+        margin-top: 20px;
+      }
+    }
+    // descriptions
+    .descriptions {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      &__content {
+        flex-wrap: wrap;
+      }
+      &__left {
+        flex-basis: 100%;
+        padding-right: 0px;
+      }
+      &__right {
+        flex-basis: 100%;
+        margin-top: 20px;
+        padding-right: 0px;
+      }
+    }
+    // collaboration-form
+    .collaboration-form {
+      margin-bottom: 100px;
+      &__content {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        background: #ffffff;
+        & .request__descr {
+          margin-right: 16px;
+        }
+        & .form__btn {
+          background-color: #7f8f9f;
+          &:hover {
+            background-color: $color-hover-light;
+            color: $color-black;
+          }
+        }
+      }
+    }
+  }
   // <-- media medium end -->
 }

@@ -1,4 +1,4 @@
-@import './common.scss';
+@import "./common.scss";
 // Pages css:
 
 // designing-technical-support.html
@@ -42,6 +42,9 @@
       &__list {
         max-width: 500px;
         list-style-type: disc;
+      }
+      &__list-box {
+        padding-left: 20px;
       }
       &__list-laptop {
         display: none;
@@ -360,7 +363,7 @@
       color: $color-white;
     }
     &__mail:hover {
-      color: #B5C4D4;
+      color: #b5c4d4;
     }
     &__content {
       display: flex;
@@ -438,6 +441,9 @@
           text-decoration: underline;
         }
       }
+    }
+    &__link {
+      display: none;
     }
   }
 }
@@ -856,7 +862,7 @@
       padding-top: 11px;
     }
     &__row:not(:last-child) {
-      border-bottom: 1px solid #7F8F9F;
+      border-bottom: 1px solid #7f8f9f;
     }
     &__list {
       width: 100%;
@@ -864,17 +870,17 @@
       grid-template-columns: repeat(1, 1fr);
     }
     &__key {
-      color: #B5C4D4;
+      color: #b5c4d4;
       font-size: 18px;
     }
     &__value {
-      color: #FFFFFF;
+      color: #ffffff;
       font-size: 18px;
       border-width: 0px;
     }
     &__link {
-      transition: ease .3s;
-      border-bottom: 1px solid #FFF;
+      transition: ease 0.3s;
+      border-bottom: 1px solid #fff;
     }
   }
   // about-project
@@ -933,7 +939,7 @@
       min-height: 297px;
     }
   }
-  // delivered-products 
+  // delivered-products
   .delivered-products {
     margin-bottom: 150px;
     &__header {
@@ -958,45 +964,115 @@
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(2, 1fr);
-  & .delivered-card {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 40px;
-    padding-left: 40px;
-    border: 1px solid #585858;
-    &__top {
-      flex-basis: 100%;
+}
+
+// collaboration-page.html
+.collaboration-page {
+  // collaboration
+  .collaboration {
+    background-color: #004289;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &__content {
       display: flex;
     }
-    &__bottom {
+    &__left {
+      flex-basis: 50%;
+      padding-right: 91px;
+    }
+    &__right {
+      flex-basis: 50%;
+      padding-right: 149px;
+    }
+    &__descr {
+      color: #ffffff;
+    }
+  }
+  // information
+  .information {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    &__content {
       display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      flex-basis: 100%;
-      margin-top: 60px;
+    }
+    &__left {
+      flex-basis: 50%;
+      padding-right: 61px;
+    }
+    &__right {
+      flex-basis: 50%;
+    }
+    &__descr:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  // info-lists
+  .info-lists {
+    &__content {
+      display: flex;
+    }
+    &__left {
+      flex-basis: 50%;
+      padding-right: 70px;
+    }
+    &__right {
+      flex-basis: 50%;
       padding-right: 40px;
     }
-    &__list {
-      margin-top: 40px;
-      color: #9F9F9F;
-    }
     &__title {
-      margin-top: 40px;
+      color: #585858;
     }
-    &__image-box {
-      flex-basis: 281px;
-      margin-left: auto;
+    &__list {
+      margin-left: 20px;
+      margin-top: 30px;
+      list-style-type: disc;
     }
-    &__item {
+    &__item:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+  // descriptions
+  .descriptions {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    &__content {
       display: flex;
-      margin-bottom: 3px;
-      white-space: nowrap;
     }
-    &__key {
-      margin-right: 5px;
+    &__left {
+      flex-basis: 50%;
+      padding-right: 60px;
+      & .descriptions__descr {
+        color: #585858;
+      }
     }
-    &__btn {
-      width: 125px;
+    &__right {
+      flex-basis: 50%;
+      padding-right: 40px;
+      & .descriptions__descr:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  // collaboration-form
+  .collaboration-form {
+    margin-bottom: 200px;
+    background-color: #ffffff;
+    &__content {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+      background: #ffffff;
+      & .request__descr {
+        margin-right: 74px;
+      }
+      & .form__btn {
+        background-color: #7f8f9f;
+        &:hover {
+          background-color: $color-hover-light;
+          color: $color-black;
+        }
+      }
     }
   }
 }
