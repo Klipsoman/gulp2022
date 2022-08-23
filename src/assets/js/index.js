@@ -112,6 +112,4 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
   // Create maps
   createMaps();
-
-  
 });
