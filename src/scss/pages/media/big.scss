@@ -786,5 +786,44 @@
     }
   }
 
+  // Career page
+  .career-page {
+    .career-inner {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      &__left {
+        flex-basis: 650px;
+        padding-right: 80px;
+      }
+      &__right {
+        flex-basis: 310px;
+        padding-right: 0px;
+      }
+    }
+    // career-feature
+    .career-feature {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      &__title {
+        margin-bottom: 40px;
+        margin-right: 0px;
+      }
+      &__item > * + * {
+        margin-top: 29px;
+      }
+      &__item:nth-child(odd) {
+        padding-right: 17px;
+      }
+      &__item:nth-child(even) {
+        padding-right: 0px;
+      }
+      &__item:nth-child(2n + 3) {
+        margin-top: 100px;
+      }
+      &__item:nth-child(2n + 4) {
+        margin-top: 100px;
+      }
+    }
+  }
   // <-- media big end -->
 }

@@ -1,4 +1,4 @@
-@import "./common.scss";
+@import './common.scss';
 // Pages css:
 
 // designing-technical-support.html
@@ -1079,14 +1079,13 @@
 
 // history-page.html
 .history-page {
- 
   .history-inner {
     margin-bottom: 100px;
     &__descr {
       margin-top: 20px;
     }
   }
-  
+
   .timeline-block {
     margin-bottom: 150px;
   }
@@ -1110,7 +1109,7 @@
     }
     div {
       &:after {
-        content: "";
+        content: '';
         width: 2px;
         position: absolute;
         top: -4px;
@@ -1165,10 +1164,10 @@
             }
           }
           &:first-of-type:after {
-            content: "";
+            content: '';
             width: 20px;
             height: 20px;
-            background: #FFF;
+            background: #fff;
             border: 2px solid #c09a5d;
             border-radius: 50%;
             position: absolute;
@@ -1196,8 +1195,106 @@
     }
   }
 
-  // page-links 
+  // page-links
   .page-links {
     margin-bottom: 200px;
+  }
+}
+
+// Career page
+.career-page {
+  .career-inner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #004289;
+    &__content {
+      display: flex;
+    }
+    &__left {
+      flex-basis: 50%;
+      padding-right: 91px;
+    }
+    &__right {
+      flex-basis: 50%;
+      padding-right: 199px;
+    }
+    &__descr {
+      color: #ffffff;
+    }
+  }
+  // stats
+  .stats {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &__area {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    &__area:not(:last-child) {
+      border-right: 1px solid $color-border;
+    }
+    &__area:not(:first-child) {
+      padding-left: 40px;
+    }
+
+    &__number {
+      flex-basis: 100%;
+      font-size: 48px;
+      color: $color-header;
+    }
+    &__descr {
+      flex-basis: 100%;
+      max-width: 195px;
+    }
+  }
+  // career-feature
+  .career-feature {
+    margin-top: 150px;
+    margin-bottom: 200px;
+    &__title {
+      margin-bottom: 50px;
+      margin-right: 166px;
+    }
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__descr {
+      color: #232323;
+    }
+    &__item > * + * {
+      margin-top: 20px;
+    }
+    &__item:nth-child(odd) {
+      padding-right: 91px;
+    }
+    &__item:nth-child(even) {
+      padding-right: 69px;
+    }
+    &__item:nth-child(2n+3) {
+      margin-top: 150px;
+    }
+    &__item:nth-child(2n+4) {
+      margin-top: 150px;
+    }
+    &__mail {
+      color: #004289;
+    }
+    &__hh {
+      & > div {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: 247px !important;
+        min-height: 247px !important;
+        & > div[class^='hh-footer'] {
+          display: none !important;
+        }
+      }
+    }
   }
 }

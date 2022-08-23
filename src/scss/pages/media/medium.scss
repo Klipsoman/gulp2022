@@ -515,7 +515,7 @@
       padding-bottom: 0;
       &__link {
         &::before {
-          content: "";
+          content: '';
           position: absolute;
           bottom: 0;
           left: 0;
@@ -606,8 +606,8 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-          "name tel"
-          "name mail";
+          'name tel'
+          'name mail';
       }
       &__item:first-child {
         border-top: 1px solid $color-normal;
@@ -771,7 +771,7 @@
         order: 1;
         padding-bottom: 40px;
         &::before {
-          content: "";
+          content: '';
           position: absolute;
           bottom: 20px;
           left: 0;
@@ -787,7 +787,7 @@
       &__area:nth-child(3) {
         order: 2;
         &::before {
-          content: "";
+          content: '';
           position: absolute;
           bottom: 20px;
           left: 0;
@@ -1228,5 +1228,118 @@
       margin-bottom: 100px;
     }
   }
+
+  // Career page
+  .career-page {
+    .career-inner {
+      padding-top: 35px;
+      padding-bottom: 35px;
+      &__content {
+        flex-wrap: wrap;
+      }
+      &__left {
+        flex-basis: 100%;
+        padding-right: 0px;
+      }
+      &__right {
+        flex-basis: 100%;
+        margin-top: 30px;
+        padding-right: 0px;
+      }
+    }
+    // stats
+    .stats {
+      margin-top: 60px;
+      margin-bottom: 40px;
+      &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      &__area {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: initial;
+        flex-basis: initial;
+      }
+      &__area:not(:last-child) {
+        border-right: none;
+      }
+      &__area:not(:first-child) {
+        padding-left: 0px;
+      }
+      &__area:nth-child(1) {
+        order: 1;
+        padding-bottom: 40px;
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 20px;
+          left: 0;
+          width: 200px;
+          height: 1px;
+          background-color: $color-border;
+        }
+      }
+      &__area:nth-child(2) {
+        padding-bottom: 40px;
+        order: 3;
+      }
+      &__area:nth-child(3) {
+        order: 2;
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 20px;
+          left: 0;
+          width: 200px;
+          height: 1px;
+          background-color: $color-border;
+        }
+      }
+      &__area:nth-child(4) {
+        order: 4;
+      }
+
+      &__number {
+        margin-bottom: 5px;
+        flex-basis: initial;
+      }
+      &__descr {
+        flex-basis: initial;
+        max-width: 195px;
+      }
+    }
+    // career-feature
+    .career-feature {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      &__title {
+        margin-bottom: 20px;
+        margin-right: 0px;
+      }
+      &__grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      &__item > * + * {
+        margin-top: 29px;
+      }
+      &__item:nth-child(odd) {
+        padding-right: 0px;
+      }
+      &__item:nth-child(even) {
+        padding-right: 0px;
+      }
+      &__item:not(:first-child) {
+        margin-top: 20px;
+      }
+      &__item:nth-child(2n + 3) {
+        margin-top: 60px;
+      }
+      &__item:nth-child(2n + 4) {
+        margin-top: 60px;
+      }
+    }
+  }
+
   // <-- media medium end -->
 }
