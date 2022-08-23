@@ -97,6 +97,45 @@
     }
   }
 
+  // manufacture
+  .manufacture {
+    &__top {
+      margin-bottom: 122px;
+    }
+    &__title-box {
+      flex-basis: 50%;
+      padding-right: 0px;
+    }
+    &__header {
+      margin-right: 171px;
+    }
+    &__header + .manufacture__descr {
+      display: block;
+      margin-right: 155px;
+      margin-top: 30px;
+    }
+    &__descr-box {
+      display: none;
+    }
+    &__image-box {
+      flex-basis: 50%;
+      & img {
+        display: block;
+        margin-left: auto;
+      }
+    }
+    &__info {
+      flex-basis: 325px;
+      flex-shrink: 0;
+    }
+    &__middle {
+      margin-bottom: 273px;
+    }
+    &__address {
+      margin-right: 140px;
+    }
+  }
+
   // Pages css:
 
   // designing-technical-support.html
@@ -285,13 +324,6 @@
         max-height: 161px;
       }
     }
-
-    // .catalog {
-    //   &__body {
-    //     font-size: 16px;
-    //     line-height: 135%;
-    //   }
-    // }
 
     .bvz-links {
       &__item:not(:first-child) {
@@ -822,6 +854,35 @@
       }
       &__item:nth-child(2n + 4) {
         margin-top: 100px;
+      }
+    }
+  }
+
+  // manufacture-page
+  .manufacture-page {
+    .manufacture-inner {
+      &__left {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        flex-basis: 50%;
+        & .manufacture-inner__descr:first-child {
+          margin-bottom: 40px;
+          margin-right: 17px;
+        }
+        & .manufacture-inner__descr:nth-child(2) {
+          margin-bottom: 20px;
+        }
+        & .manufacture-inner__descr:not(:first-child) {
+          margin-right: 17px;
+        }
+      }
+      &__right {
+        flex-basis: 50%;
+      }
+      &__circle {
+        height: 467px;
+        width: 467px;
+        margin: auto;
       }
     }
   }

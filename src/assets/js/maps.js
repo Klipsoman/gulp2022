@@ -1,6 +1,6 @@
-import { mapsSrc } from './constants/index.js'
+import { mapsSrc } from './constants/index.js';
 
-export const createMaps = () => {
+export const createMapsContacts = () => {
   const office = document.querySelector('#office');
   const westFactory = document.querySelector('#west-factory');
   const eastFactory = document.querySelector('#east-factory');
@@ -24,7 +24,24 @@ export const createMaps = () => {
   if (officeMapScript) officeMap.append(officeMapScript);
   if (westMapScript) westFactoryMap.append(westMapScript);
   if (eastMapScript) eastFactoryMap.append(eastMapScript);
+}
 
+export const createMapsManufacture = () => {
+  const gatchina = document.querySelector('.manufacture-page .manufactures .manufacture');
+
+  if (!gatchina) {
+    return;
+  }
+
+  const gatchinaMap = gatchina.querySelector('.manufacture__map');
+
+  const width = checkMedia(window.innerWidth);
+  
+  if (!width) return;
+
+  const gatchinaMapScript = createMapScript(width, mapsSrc.gatchinaMap);
+
+  if (gatchinaMapScript) gatchinaMap.append(gatchinaMapScript);
 }
 
 const checkMedia = (width) => {

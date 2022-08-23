@@ -27,4 +27,10 @@ export const mapsSrc = {
     medium: eastMapSrc,
     small: getHeightMapSrc(eastMapSrc, 178),
   },
+  gatchinaMap: {
+    large: getHeightMapSrc(eastMapSrc, 496),
+    big: getHeightMapSrc(eastMapSrc, 397),
+    medium: getHeightMapSrc(eastMapSrc, 295),
+    small: getHeightMapSrc(eastMapSrc, 300),
+  }
 };

@@ -171,6 +171,65 @@
     }
   }
 
+  // manufacture
+  .manufacture {
+    &__top {
+      margin-bottom: 167px;
+    }
+    &__title-box {
+      flex-basis: 50%;
+      padding-right: 0px;
+    }
+    &__header {
+      margin-right: 0;
+    }
+    &__header + .manufacture__descr {
+      display: block;
+      margin-right: 10px;
+      margin-top: 30px;
+    }
+    &__descr-box {
+      display: none;
+    }
+    &__image-box {
+      flex-basis: 50%;
+      & img {
+        display: block;
+        margin-left: auto;
+      }
+    }
+    &__middle {
+      margin-bottom: 163px;
+    }
+    &__lists {
+      position: relative;
+      & .manufacture__list:first-child {
+        margin-right: 22px;
+        max-width: 269px;
+      }
+      & .manufacture__list:nth-child(2) {
+        padding-left: 50px;
+      }
+      & .manufacture__li:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+    &__round {
+      height: 300px;
+      width: 300px;
+      left: 289px;
+    }
+    &__info {
+      flex-basis: 50%;
+    }
+    &__map {
+      flex-basis: 50%;
+    }
+    &__address {
+      margin-right: 129px;
+    }
+  }
+
   // Pages css:
 
   // designing-technical-support.html
@@ -1341,5 +1400,53 @@
     }
   }
 
+  // manufacture-page
+  .manufacture-page {
+    .manufacture-inner {
+      &__content {
+        flex-wrap: wrap;
+      }
+      &__top {
+        flex-basis: 100%;
+        padding-top: 40px;
+        margin-bottom: 14px;
+        display: block;
+      }
+      &__left {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 6px;
+        flex-basis: 50%;
+        & .manufacture-inner__descr:first-child {
+          display: none;
+        }
+        & .manufacture-inner__descr:nth-child(2) {
+          margin-bottom: 20px;
+        }
+        & .manufacture-inner__descr:not(:first-child) {
+          margin-right: 10px;
+        }
+      }
+      &__right {
+        flex-basis: 50%;
+      }
+      &__circle {
+        height: 263px;
+        width: 263px;
+        margin: auto;
+      }
+    }
+    // manufactures
+    .manufactures {
+      padding-top: 100px;
+      padding-bottom: 80px;
+      & .manufacture:first-child {
+        margin-bottom: 100px;
+      }
+      & .manufacture:nth-child(2) {
+        padding-top: 100px;
+      }
+    }
+  }
   // <-- media medium end -->
 }

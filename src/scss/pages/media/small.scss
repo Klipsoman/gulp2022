@@ -186,6 +186,75 @@
     }
   }
 
+    // manufacture
+    .manufacture {
+      &__top {
+        margin-bottom: 110px;
+        flex-wrap: wrap;
+      }
+      &__title-box {
+        flex-basis: 100%;
+        padding-right: 0px;
+      }
+      &__header {
+        margin-right: 0;
+      }
+      &__header + .manufacture__descr {
+        display: block;
+        margin-right: 10px;
+        margin-top: 30px;
+      }
+      &__descr-box {
+        display: none;
+      }
+      &__image-box {
+        flex-basis: 100%;        
+        margin-top: 20px;
+        & img {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &__middle {
+        margin-bottom: 103px;
+      }
+      &__lists {
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+        & .manufacture__list:first-child {
+          margin-right: 0px;
+          max-width: 269px;
+          padding-bottom: 20px;
+        }
+        & .manufacture__list:nth-child(2) {
+          padding-left: 0px;
+          padding-top: 30px;
+          border-top: 1px solid #CACACA;
+          border-left: none;
+        }
+        & .manufacture__li:not(:last-child) {
+          margin-bottom: 0px;
+        }
+      }
+      &__round {
+        height: 300px;
+        width: 300px;
+        left: 50%;
+      }
+      &__bottom {
+        flex-wrap: wrap;
+      }
+      &__info {
+        flex-basis: 100%;
+      }
+      &__map {
+        flex-basis: 100%;
+      }
+    }
+
   // Pages css:
 
   // designing-technical-support.html
@@ -1320,48 +1389,97 @@
         }
       }
     }
-       // career-feature
-       .career-feature {
-        margin-top: 80px;
-        margin-bottom: 80px;
-        &__title {
+    // career-feature
+    .career-feature {
+      margin-top: 80px;
+      margin-bottom: 80px;
+      &__title {
+        margin-bottom: 30px;
+        margin-right: 0px;
+      }
+      &__grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      &__item > * + * {
+        margin-top: 29px;
+      }
+      &__item:nth-child(odd) {
+        padding-right: 0px;
+      }
+      &__item:nth-child(even) {
+        padding-right: 0px;
+      }
+      &__item:not(:first-child) {
+        margin-top: 0px;
+      }
+      &__item:nth-child(2n + 3) {
+        margin-top: 0px;
+      }
+      &__item:nth-child(2n + 4) {
+        margin-top: 0px;
+      }
+      &__item:nth-child(1) {
+        margin-top: 0px;
+      }
+      &__item:nth-child(2) {
+        margin-top: 20px;
+      }
+      &__item:nth-child(3) {
+        margin-top: 60px;
+      }
+      &__item:nth-child(4) {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  // manufacture-page
+  .manufacture-page {
+    .manufacture-inner {
+      &__content {
+        flex-wrap: wrap;
+      }
+      &__top {
+        display: none;
+      }
+      &__left {
+        flex-basis: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 6px;
+        & .manufacture-inner__descr:first-child {
           margin-bottom: 30px;
           margin-right: 0px;
         }
-        &__grid {
-          grid-template-columns: repeat(1, 1fr);
+        & .manufacture-inner__descr:nth-child(2) {
+          margin-bottom: 20px;
         }
-        &__item > * + * {
-          margin-top: 29px;
-        }
-        &__item:nth-child(odd) {
-          padding-right: 0px;
-        }
-        &__item:nth-child(even) {
-          padding-right: 0px;
-        }
-        &__item:not(:first-child) {
-          margin-top: 0px;
-        }
-        &__item:nth-child(2n + 3) {
-          margin-top: 0px;
-        }
-        &__item:nth-child(2n + 4) {
-          margin-top: 0px;
-        }
-        &__item:nth-child(1) {
-          margin-top: 0px;
-        }
-        &__item:nth-child(2) {
-          margin-top: 20px;
-        }
-        &__item:nth-child(3) {
-          margin-top: 60px;
-        }
-        &__item:nth-child(4) {
-          margin-top: 30px;
+        & .manufacture-inner__descr:not(:first-child) {
+          margin-right: 17px;
         }
       }
+      &__right {
+        flex-basis: 100%;
+        margin-top: 10px;
+        margin-bottom: 40px;
+      }
+      &__circle {
+        height: 300px;
+        width: 300px;
+        margin: auto;
+      }
+    }
+     // manufactures
+     .manufactures {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      & .manufacture:first-child {
+        margin-bottom: 80px;
+      }
+      & .manufacture:nth-child(2) {
+        padding-top: 80px;
+      }
+    }
   }
 
   // <-- media small end -->

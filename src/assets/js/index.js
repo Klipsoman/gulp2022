@@ -1,5 +1,5 @@
 import { checkMobile } from "./utils/index.js";
-import { createMaps } from "./maps.js";
+import { createMapsManufacture, createMapsContacts } from "./maps.js";
 import { initSliders } from "./swiper/initSlider.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
@@ -111,5 +111,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
   initSliders();
 
   // Create maps
-  createMaps();
+  createMapsContacts();
+  createMapsManufacture();
 });
