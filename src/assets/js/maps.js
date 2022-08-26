@@ -27,21 +27,28 @@ export const createMapsContacts = () => {
 }
 
 export const createMapsManufacture = () => {
-  const gatchina = document.querySelector('.manufacture-page .manufactures .manufacture');
+  const gatchina = document.querySelector('.manufacture-page .manufactures .manufacture#gatchina');
+  const nevinnomisk = document.querySelector('.manufacture-page .manufactures .manufacture#nevinnomisk');
 
-  if (!gatchina) {
+  if (!gatchina && !nevinnomisk) {
     return;
   }
 
   const gatchinaMap = gatchina.querySelector('.manufacture__map');
+  const nevinnomiskMap = nevinnomisk.querySelector('.manufacture__map');
 
   const width = checkMedia(window.innerWidth);
   
   if (!width) return;
 
   const gatchinaMapScript = createMapScript(width, mapsSrc.gatchinaMap);
+  const nevinnomiskMapScript = createMapScript(width, mapsSrc.gatchinaMap);
 
-  if (gatchinaMapScript) gatchinaMap.append(gatchinaMapScript);
+  if (gatchinaMapScript && nevinnomiskMapScript) {
+    gatchinaMap.append(gatchinaMapScript);
+    nevinnomiskMap.append(nevinnomiskMapScript);
+
+  }
 }
 
 const checkMedia = (width) => {

@@ -1,4 +1,4 @@
-@import './common.scss';
+@import "./common.scss";
 // Pages css:
 
 // designing-technical-support.html
@@ -206,9 +206,6 @@
     &__item:not(:last-child) {
       margin-right: 22px;
     }
-    &__item:hover {
-      background-color: $bgc-mobile;
-    }
     &__item:last-child {
       padding-top: 33px;
       & .build-card__top {
@@ -222,6 +219,9 @@
   .build-card {
     padding-bottom: 30px;
     border: 1px solid #585858;
+    &:hover .build-card__link {
+      color: $color-hover;
+    }
     &__top {
       margin-bottom: 53px;
       display: flex;
@@ -793,7 +793,6 @@
       flex-shrink: 0;
     }
     &__right {
-      // flex-basis: 50%;
       width: 50%;
       max-height: 343px;
       padding-left: 203px;
@@ -814,6 +813,56 @@
       & .page-links__item {
         margin-top: 10px;
         flex-basis: 50%;
+      }
+    }
+    &__slider {
+      & .projects__keys {
+        padding-top: 10px;
+        & .custom-arrow {
+          border: none;
+          width: 24px;
+          height: 14px;
+        }
+        & .custom-arrow__line {
+          height: 1px;
+          width: 100%;
+          top: 50%;
+          left: 0;
+        }
+        & .custom-arrow__upline-next {
+          width: 7px;
+          height: 1px;
+          top: 4.5px;
+          right: -0.5px;
+          left: auto;
+          transform: rotateZ(40deg);
+        }
+        & .custom-arrow__downline-next {
+          width: 7px;
+          height: 1px;
+          bottom: 3.5px;
+          right: -0.5px;
+          left: auto;
+          top: auto;
+          transform: rotateZ(-40deg);
+        }
+        & .custom-arrow__upline-prev {
+          width: 7px;
+          height: 1px;
+          top: 4.5px;
+          right: auto;
+          left: -0.5px;
+          transform: rotateZ(-40deg);
+        }
+        & .custom-arrow__downline-prev {
+          width: 7px;
+          height: 1px;
+          bottom: 3.5px;
+          right: auto;
+          left: -0.5px;
+          top: auto;
+          transform: rotateZ(40deg);
+        }
       }
     }
   }
@@ -1094,13 +1143,13 @@
   div.item {
     display: flex;
     flex: auto;
-    overflow-y: auto;
+    // overflow-y: auto;
     padding: 0rem;
   }
 
   .timeline {
     position: relative;
-    display: table; //*For Firefox
+    display: table;
     height: 100%;
     margin: {
       left: auto;
@@ -1109,7 +1158,7 @@
     }
     div {
       &:after {
-        content: '';
+        content: "";
         width: 2px;
         position: absolute;
         top: -4px;
@@ -1121,7 +1170,7 @@
     }
     h3 {
       position: absolute;
-      top: 0px;
+      top: 14px;
       left: -105px;
       color: #c09a5d;
       margin: 0;
@@ -1154,7 +1203,7 @@
         }
         ul {
           list-style-type: none;
-          padding: 0 0 0 125px;
+          padding: 10px 0 0 125px;
           margin: -1.35rem 0 1em;
           max-width: 650px;
           font-size: 1em;
@@ -1164,16 +1213,27 @@
             }
           }
           &:first-of-type:after {
-            content: '';
-            width: 20px;
-            height: 20px;
+            content: "";
+            width: 39px;
+            height: 39px;
             background: #fff;
             border: 2px solid #c09a5d;
             border-radius: 50%;
             position: absolute;
-            left: 49px;
+            left: 39px;
             top: 3px;
             z-index: 2;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 23px;
+            left: 59px;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            z-index: 5;
+            background-color: #c09a5d;
           }
           li {
             margin-left: 0.5rem;
@@ -1191,6 +1251,17 @@
     & section.year:last-child {
       & section {
         margin-bottom: 22px;
+        & > ul > li:first-child img {
+          width: 129px;
+        }
+      }
+    }
+    & section.year:first-child {
+      & section {
+        & > ul > li {
+          position: relative;
+          top: -42px;
+        }
       }
     }
   }
@@ -1291,7 +1362,7 @@
         width: 100% !important;
         height: 247px !important;
         min-height: 247px !important;
-        & > div[class^='hh-footer'] {
+        & > div[class^="hh-footer"] {
           display: none !important;
         }
       }
@@ -1358,5 +1429,9 @@
         left: 50%;
       }
     }
+  }
+  // page-links
+  .page-links {
+    margin-bottom: 200px;
   }
 }
