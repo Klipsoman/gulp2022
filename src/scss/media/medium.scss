@@ -259,6 +259,15 @@
         max-width: 220px;
         margin-top: 0;
       }
+      & .produce__about-block {
+        min-height: auto;
+        flex: 50%;
+      }
+      & .produce__image-block {
+        padding-left: 0;
+        margin-bottom: 30px;
+        margin-top: 30px;
+      }
     }
 
     &__image-block {

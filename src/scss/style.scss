@@ -747,6 +747,16 @@ textarea {
       max-width: 256px;
       margin-top: 25px;
     }
+    & .produce__about-block {
+      min-height: 226px;
+    }
+    & .produce__image-block {
+      min-height: auto;
+      justify-content: left;
+      margin-top: 68px;
+      padding: 0;
+      padding-left: 25px;
+    }
   }
   &__title {
     font-size: $font-size-large;

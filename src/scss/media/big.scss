@@ -42,6 +42,11 @@
         max-width: 222px;
       }
     }
+    &__item--third {
+      & .produce__image-block {
+        margin-top: auto;
+      }
+    }
     &__image-block {
       min-height: 222px;
       max-height: 222px;
