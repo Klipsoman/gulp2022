@@ -1404,15 +1404,12 @@
     }
     &__right {
       flex-basis: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     &__descr {
       color: #ffffff;
-    }
-    &__circle {
-      height: 601px;
-      width: 601px;
-      border: 1px solid #ffffff;
-      border-radius: 50%;
     }
   }
   // manufactures

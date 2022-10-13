@@ -1451,10 +1451,8 @@
       &__right {
         flex-basis: 50%;
       }
-      &__circle {
-        height: 263px;
-        width: 263px;
-        margin: auto;
+      &__image-box {
+        max-width: 202px;
       }
     }
     // manufactures

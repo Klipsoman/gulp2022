@@ -883,10 +883,8 @@
       &__right {
         flex-basis: 50%;
       }
-      &__circle {
-        height: 467px;
-        width: 467px;
-        margin: auto;
+      &__image-box {
+        max-width: 303px;
       }
     }
     // page-links
