@@ -9,12 +9,12 @@ export const js = () => {
       })
     ))
     // Если нужен один входящий файл .js убрать коммент здесь и в path
-    // .pipe(webpack({
-    //   mode: 'development',
-    //   output: {
-    //     filename: 'index.js'
-    //   }
-    // }))
+    .pipe(webpack({
+      mode: 'development',
+      output: {
+        filename: 'index.js'
+      }
+    }))
     .pipe(app.gulp.dest(app.path.build.js))
     .pipe(app.plugins.browsersync.stream());
 };

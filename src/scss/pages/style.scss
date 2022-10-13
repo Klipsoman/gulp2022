@@ -782,6 +782,13 @@
       padding-right: 46px;
     }
   }
+  // tech-info
+  .tech-info {
+    margin-bottom: 150px;
+    &__header {
+      margin-bottom: 30px;
+    }
+  }
   // use-areas
   .use-areas {
     margin-bottom: 150px;
@@ -1433,5 +1440,213 @@
   // page-links
   .page-links {
     margin-bottom: 200px;
+  }
+}
+
+// docs
+.docs-page {
+  .docs-options {
+    margin-bottom: 100px;
+    &__content {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__input {
+      width: 263px;
+    }
+    &__btn {
+      width: 113px;
+      min-width: auto;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  .docs {
+    margin-bottom: 200px;
+    .catalog {
+      &__body {
+        justify-content: unset;
+        border-bottom: 1px solid #585858;
+        border-top: none;
+      }
+      &__link-box {
+        flex-basis: 550px;
+        max-width: 550px;
+      }
+      &__type {
+        margin-right: auto;
+        margin-left: 40px;
+      }
+    }
+    & .docs__item:first-child .catalog__body {
+      border-top: 1px solid #585858;
+    }
+    &__bottom-options-content {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pagination {
+      margin-top: 45px;
+    }
+    .amount {
+      position: absolute;
+      right: 0;
+      top: 50%;
+    }
+  }
+}
+
+// projects-page
+.projects-page {
+  .projects {
+    padding: 0;
+    &__filters {
+      display: flex;
+    }
+    &__filter:first-child {
+      margin-right: 15px;
+    }
+    &__filter .custom-select__btn {
+      max-width: 160px;
+    }
+    &__filter .custom-select__body {
+      min-width: 306px;
+    }
+    &__list {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 75px;
+    }
+    &__item {
+      overflow: hidden;
+    }
+    &__link {
+      display: block;
+      position: relative;
+    }
+    &__link:hover .projects__info {
+      height: 100%;
+    }
+    &__link:hover .projects__title-box {
+      opacity: 1;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      bottom: 3px;
+      left: 0;
+      right: 0;
+      height: 0%;
+      background-color: rgba($color: #000000, $alpha: 0.6);
+    }
+    &__title-box {
+      margin-left: 20px;
+      margin-bottom: 15px;
+      margin-right: 20px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #cacaca;
+      opacity: 0;
+      transition-delay: .1s;
+    }
+    &__title-box:first-child {
+      margin-top: auto;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 140%;
+      color: #ffffff;
+      letter-spacing: unset;
+      text-transform: none;
+    }
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+    &__reset {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 30px;
+      cursor: pointer;
+      color: #7F8F9F;
+    }
+    &__options {
+      margin-top: 46px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .amount {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  .catalog {
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+}
+
+// sandvich-panels-page.html
+.sandvich-panels-page {
+  .sandvich-panels-inner {
+    background-color: #F0F5FB;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &__content  {
+      display: grid;
+      grid-template-columns: 306px 487px 407px;
+    }
+    &__left {
+      padding-right: 106px;
+    }
+    &__middle {
+      padding-right: 109px;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__info:nth-child(2) {
+      margin-top: 50px;
+    }
+  }
+
+  .sandvich-panels-table {
+    &__content {
+      margin-top: 100px;
+      display: flex;
+    }
+    &__left {
+      width: 306px;
+      padding-right: 115px;
+    }
+    &__right {
+      flex-grow: 1;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 22px;
+    }
+  }
+
+  .catalog {
+    margin-top: 150px;
+    margin-bottom: 200px;
+  }
+
+  .sandvich-panels-footer {
+    display: none;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #F0F5FB;
   }
 }

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html-templates/head.html')
+
+<body>
+  @@include('html-templates/header.html')
+  <!-- Page Inner -->
+  @@include('html-templates/page-inner.html', { "header": "Документы и сертификаты"})
+
+  <!-- docs-page -->
+  <div class="docs-page">
+
+    <div class="docs-options">
+      <div class="container">
+
+        <div class="docs-options__content">
+
+          <div class="docs-options__left">
+
+            <div class="docs-options__select custom-select" id="documents-and-sertificates-type">
+              <div class="custom-select__title description-secondary">Тип документа</div>
+              <div class="custom-select__body">
+                <ul class="custom-select__list">
+                  <li class="custom-select__item">
+                    <div class="custom-select__checkbox">
+                      <input type="checkbox" name="name1" id="name1">
+                    </div>
+                    <div class="custom-select__label">
+                      <label for="name1">Брошюры</label>
+                    </div>
+                  </li>
+                  <li class="custom-select__item">
+                    <div class="custom-select__checkbox">
+                      <input type="checkbox" name="name2" id="name2">
+                    </div>
+                    <div class="custom-select__label">
+                      <label for="name2">Сертификаты</label>
+                    </div>
+                  </li>
+                </ul>
+                <input class="custom-select__btn btn btn-grey" type="submit" value="Применить">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="docs-options__right">
+            <form class="docs-options__search" action="">
+              <input class="docs-options__input" type="text" name="" id="" />
+              <input class="docs-options__btn btn btn-grey" type="submit" value="Поиск">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="docs">
+      <div class="container">
+        <div class="docs__list">
+
+          <div class="docs__item">
+            <div class="catalog">
+              <div class="catalog__body">
+                <div class="catalog__link-box">
+                  <a href="" class="catalog__link">Каталог «Быстровозводимые здания» (pdf)</a>
+                </div>
+                <div class="catalog__type">Брошюры</div>
+                <div class="catalog__download-box">
+                  <a href="" class="catalog__download-link">Скачать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs__item">
+            <div class="catalog">
+              <div class="catalog__body">
+                <div class="catalog__link-box">
+                  <a href="" class="catalog__link">Каталог «Быстровозводимые здания» (pdf)</a>
+                </div>
+                <div class="catalog__type">Брошюры</div>
+                <div class="catalog__download-box">
+                  <a href="" class="catalog__download-link">Скачать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs__item">
+            <div class="catalog">
+              <div class="catalog__body">
+                <div class="catalog__link-box">
+                  <a href="" class="catalog__link">Каталог «Быстровозводимые здания» (pdf)</a>
+                </div>
+                <div class="catalog__type">Брошюры</div>
+                <div class="catalog__download-box">
+                  <a href="" class="catalog__download-link">Скачать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="docs__bottom-options">
+
+          <div class="docs__bottom-options-content">
+
+            <!-- pagination -->
+            <div class="news__pagination pagination">
+              <div class="pagination__items">
+                <div class="pagination__prev"></div>
+                <div class="pagination__item current">1</div>
+                <div class="pagination__item">2</div>
+                <div class="pagination__item">3</div>
+                <div class="pagination__next"></div>
+              </div>
+            </div>
+            <!-- !pagination -->
+            <form action="" method="get" id="asd">
+              <div class="amount" id="documents-and-sertificates-amount">
+                <div class="amount__body">
+                  <div class="amount__title description-secondary" data-mount="24">24</div>
+                  <ul class="amount__list">
+                    <li class="amount__item">
+                      <label for="" data-mount="24">
+                        1
+                        <input type="radio" value="1" name="filter[countperpage][]">
+                      </label>
+
+                    </li>
+                    <li class="amount__item" data-mount="48">
+                      <label for="" data-mount="48">
+                        2
+                        <input type="radio" value="2" name="filter[countperpage][]">
+                      </label>
+                    </li>
+                    <li class="amount__item" data-mount="96">
+                      <label for="" data-mount="96">
+                        3
+                        <input type="radio" value="3" data-mount="3" name="filter[countperpage][]">
+                      </label>
+                    </li>
+                    <li class="amount__item" data-mount="96">
+                      <input type="submit" value="Применить">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+
+  @@include('html-templates/footer.html')
+</body>
+
+</html>

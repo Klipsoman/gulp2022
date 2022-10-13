@@ -17,7 +17,7 @@ export const path = {
   },
   src: {
     // Если нужен один входящий файл .js убрать коммент здесь и в task/js.js
-    // js: `${srcFolder}/assets/js/index.js`,
+    js: `${srcFolder}/assets/js/index.js`,
     js: `${srcFolder}/assets/js/**/*.js`,
     scss: `${srcFolder}/scss/style.scss`,
     html: `${srcFolder}/**/*.html`,

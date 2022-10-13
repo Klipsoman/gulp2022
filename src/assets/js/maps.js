@@ -19,7 +19,7 @@ export const createMapsContacts = () => {
 
   const officeMapScript = createMapScript(width, mapsSrc.officeMap);
   const westMapScript = createMapScript(width, mapsSrc.westMap);
-  const eastMapScript = createMapScript(width, mapsSrc.eastMap);
+  const eastMapScript = createMapScript(width, mapsSrc.southMap);
 
   if (officeMapScript) officeMap.append(officeMapScript);
   if (westMapScript) westFactoryMap.append(westMapScript);
@@ -42,7 +42,7 @@ export const createMapsManufacture = () => {
   if (!width) return;
 
   const gatchinaMapScript = createMapScript(width, mapsSrc.gatchinaMap);
-  const nevinnomiskMapScript = createMapScript(width, mapsSrc.gatchinaMap);
+  const nevinnomiskMapScript = createMapScript(width, mapsSrc.nevinnomiskMap);
 
   if (gatchinaMapScript && nevinnomiskMapScript) {
     gatchinaMap.append(gatchinaMapScript);

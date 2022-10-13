@@ -630,6 +630,10 @@
         padding-right: 0px;
       }
     }
+    // tech-info
+    .tech-info {
+      margin-bottom: 130px;
+    }
     // use-areas
     .use-areas {
       margin-bottom: 100px;
@@ -887,6 +891,87 @@
     }
     // page-links
     .page-links {
+      margin-bottom: 100px;
+    }
+  }
+
+  // docs
+  .docs-page {
+    .docs {
+      margin-bottom: 100px;
+      .catalog {
+        &__link-box {
+          flex-basis: 544px;
+          max-width: 544px;
+        }
+        &__type {
+          margin-left: 30px;
+        }
+      }
+      .pagination {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .projects-page {
+    .projects {
+      &__list {
+        grid-gap: 30px;
+        margin-top: 40px;
+      }
+      &__title {
+        font-size: 16px;
+      }
+    }
+    .catalog {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+  }
+
+  // sandvich-panels-page.html
+  .sandvich-panels-page {
+    .sandvich-panels-inner {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      &__content {
+        display: grid;
+        grid-template-columns: 30% 35% 35%;
+      }
+      &__left {
+        padding-right: 97px;
+      }
+      &__middle {
+        padding-right: 44px;
+      }
+      &__right {
+        padding-left: 15px;
+      }
+      &__title {
+        margin-bottom: 15px;
+      }
+      &__info:nth-child(2) {
+        margin-top: 30px;
+      }
+    }
+
+    .sandvich-panels-table {
+      &__content {
+        margin-top: 80px;
+      }
+      &__left {
+        width: 325px;
+        padding-right: 100px;
+      }
+      &__list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+      }
+    }
+
+    .catalog {
+      margin-top: 120px;
       margin-bottom: 100px;
     }
   }
