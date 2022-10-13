@@ -247,6 +247,13 @@
     }
   }
 
+  .telephone__desktop {
+    display: none;
+  }
+  .telephone__mobile {
+    display: initial;
+  }
+
   // Pages css:
 
   // designing-technical-support.html
