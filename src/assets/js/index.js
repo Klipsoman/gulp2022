@@ -16,12 +16,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
   document.addEventListener("scroll", (e) => {
     if (window.pageYOffset > 30) {
-      // headerContent.style.borderBottom = "1px solid #CACACA";
-      header.style.boxShadow = '1px 1px 16px -1px';
+      header.classList.add('header--border');
       return;
     }
-    header.style.boxShadow = 'none';
-    // headerContent.style.borderBottom = "none";
+    header.classList.remove('header--border');
   });
 
   // Проверка устройства

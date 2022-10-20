@@ -670,6 +670,9 @@ textarea {
       }
     }
   }
+  &--border {
+    box-shadow: -1px 1px 5px -1px #b3b3b3;
+  }
 }
 
 .inner {
