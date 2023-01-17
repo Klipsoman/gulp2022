@@ -1188,10 +1188,10 @@
     }
     section.year {
       position: relative;
-      &:first-child section {
-        margin-top: -1.3em;
-        padding-bottom: 0px;
-      }
+      // &:first-child section {
+      //   margin-top: -1.3em;
+      //   padding-bottom: 0px;
+      // }
       section {
         position: relative;
         padding-bottom: 1.25em;
@@ -1263,14 +1263,14 @@
         }
       }
     }
-    & section.year:first-child {
-      & section {
-        & > ul > li {
-          position: relative;
-          top: -42px;
-        }
-      }
-    }
+    // & section.year:first-child {
+    //   & section {
+    //     & > ul > li {
+    //       position: relative;
+    //       top: -42px;
+    //     }
+    //   }
+    // }
   }
 
   // page-links
